@@ -1,0 +1,38 @@
+
+Changer le nom du joueur REPIS_GREGORY du comité CD67 de l'équipe OSTHOUSE_CSTB du championnat DM3 de la poule C.\n\nSon nom est différent dans une autre compétition. Trouver la compétition+ faire le changement dans stats\n\n
+
+Verifier la licence du joueur DIA_ALASSANE du comité FRAN de l'équipe US_AVIGNON_PONTET_1 du championnat NM3 de la poule B.\nSon numéro de licence a été différent sur deux matchs différents.\n!!!!!!!!!!!!! PENSER A CHANGER DANS TABLE JOUEURS ET DANS STRUCTURE STATS.MAT ET DANS LISTEJOUEURS !!!!!!!!!!!!!!\n\n
+Verifier la licence du joueur CAUBEL_KEVIN du comité FRAN de l'équipe MONTAUBAN_BC_1 du championnat NM3 de la poule C.\nSon numéro de licence a été différent sur deux matchs différents.\n!!!!!!!!!!!!! PENSER A CHANGER DANS TABLE JOUEURS ET DANS STRUCTURE STATS.MAT ET DANS LISTEJOUEURS !!!!!!!!!!!!!!\n\ntdj vide NM3 L ROANNE CHORALE 2 JEANNE D ARC DE VICHY RESERVE
+
+
+ecart vide NM3 L ROANNE CHORALE 2 JEANNE D ARC DE VICHY RESERVE
+tdj vide DM5 B GUEBWILLER AS SAINT LEGER  4 ABC LUTTERBACH 4
+
+
+ecart vide DM5 B GUEBWILLER AS SAINT LEGER  4 ABC LUTTERBACH 4
+tdj vide DM1  IE - CTC HEIMERSDORF MOERNACH 1 IE - CTC THUR DOLLER BASKET CLUB 1
+
+
+tdj vide U15M_EL  ASL DESSENHEIM 2 EN - CTC THUR DOLLER BASKET CLUB 1
+
+
+tdj vide PNM A BARJOUVILLE SCL 1 UB CHARTRES METROPOLE 2
+
+
+tdj vide U15M__Pre_Regionale A ROSHEIM CA 1 ERSTEIN BC 1
+
+
+tdj vide PNM A BOIGNY BC 1 BARJOUVILLE SCL 1
+
+
+tdj vide DM2 A NBC WINTZENHEIM 1 PFASTATT AS SAINT MAURICE  3
+
+
+tdj vide U15M A ASL DESSENHEIM ABC LUTTERBACH
+
+
+ecart vide U15M A ASL DESSENHEIM ABC LUTTERBACH
+tdj vide U17M A ASL DESSENHEIM DUTTLENHEIM LC
+
+
+ecart vide U17M A ASL DESSENHEIM DUTTLENHEIM LC

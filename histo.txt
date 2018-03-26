@@ -1,0 +1,279 @@
+HISTORIQUE
+Rencontre : Date : Heure :
+Arbitres :
+e-Marque - Fédération Française de Basket-Ball
+BOURQUARD E., CARLADOUS T.
+2097 24/03/18 17:15
+1 Avant match 16h54 Lancement d'une nouvelle rencontre
+2 Avant match 16h54 A A4, LIBMAN R., a été ajouté
+3 Avant match 16h54 A A5, STATH T., a été ajouté
+4 Avant match 16h55 A A7, CHAMASSI U., a été ajouté
+5 Avant match 16h55 A A8, SCHIELE L., a été ajouté
+6 Avant match 16h55 A A9, BRENDLE U., a été ajouté
+7 Avant match 16h55 A A10, PREISS-GRUNENWALD P., a été ajouté
+8 Avant match 16h55 A A11, PLANA R., a été ajouté
+9 Avant match 16h55 A A13, BURCKEL L., a été ajouté
+10 Avant match 16h57 A L'entraîneur A principal, SIMON E., a été ajouté
+11 Avant match 16h57 L'arbitre 1, BOURQUARD E., a été ajouté
+12 Avant match 16h58 L'arbitre 2, CARLADOUS T., a été ajouté
+13 Avant match 16h58 Le marqueur, HANS L., a été ajouté
+14 Avant match 16h59 Le chronométreur, MAILLARD S., a été ajouté
+15 Avant match 16h59 Le délégué de club, GRENACKER M., a été ajouté
+16 Avant match 17h00 B B5, OERTEL T., a été ajouté
+17 Avant match 17h00 B B10, DEL PIN J., a été ajouté
+18 Avant match 17h00 B B8, GEIST A., a été ajouté
+19 Avant match 17h01 B B6, KALTENBACH T., a été ajouté
+20 Avant match 17h01 B B11, HANS Q., a été ajouté
+21 Avant match 17h01 B B12, SIGRIST A., a été ajouté
+22 Avant match 17h02 B B9, REBHUN F., a été ajouté
+23 Avant match 17h03 B B7, KUHN F., a été ajouté
+24 Avant match 17h03 B L'entraîneur B principal, LECLUSE V., a été ajouté
+25 Avant match 17h03 B B6, KALTENBACH T. a été désigné capitaine d'équipe
+26 Avant match 17h04 A A5, STATH T. a été désigné capitaine d'équipe
+27 Avant match 17h09 A A5, STATH T. est entré sur le terrain de jeu
+28 Avant match 17h09 A A7, CHAMASSI U. est entré sur le terrain de jeu
+29 Avant match 17h09 A A8, SCHIELE L. est entré sur le terrain de jeu
+30 Avant match 17h09 A A9, BRENDLE U. est entré sur le terrain de jeu
+31 Avant match 17h09 A A11, PLANA R. est entré sur le terrain de jeu
+32 Avant match 17h09 A L'entraîneur de l'équipe A a effectué ses entrées en jeu et confirmé sa liste
+33 Avant match 17h10 B B5, OERTEL T. est entré sur le terrain de jeu
+34 Avant match 17h10 B B6, KALTENBACH T. est entré sur le terrain de jeu
+35 Avant match 17h10 B B8, GEIST A. est entré sur le terrain de jeu
+36 Avant match 17h10 B B10, DEL PIN J. est entré sur le terrain de jeu
+37 Avant match 17h10 B B12, SIGRIST A. est entré sur le terrain de jeu
+38 Avant match 17h12 Evénement annulé :
+Configuration des bancs d'équipes et paniers par défaut
+Remplacé par :
+Configuration des bancs d'équipes par défaut avec paniers inversés
+39 Avant match 17h10 B L'entraîneur de l'équipe B a effectué ses entrées en jeu et confirmé sa liste
+40 Avant match 17h12 Début du match
+41 Période 1 0:00 L'événement n°38 a été modifié
+42 Période 1 0:24 B B12, Anthony SIGRIST : Tir à 3 points réussi (3)
+43 Période 1 0:40 A A7, Ugo CHAMASSI : Tir à 2 points réussi (2)
+44 Période 1 0:47 A Faute : P à A5, 1ère faute personnelle
+45 Période 1 1:03 B B6, Thomas KALTENBACH : Tir à 2 points réussi (2)
+46 Période 1 1:29 B B12, Anthony SIGRIST : Tir à 2 points réussi (5)
+47 Période 1 1:30 B B10, Jules Victor DEL PIN : Tir à 2 points réussi (2)
+48 Période 1 1:30 A Temps-Mort (2ème minute)
+49 Période 1 1:37 A A4, LIBMAN R. est entré sur le terrain de jeu
+50 Période 1 1:37 A A10, PREISS-GRUNENWALD P. est entré sur le terrain de jeu
+51 Période 1 1:37 A A13, BURCKEL L. est entré sur le terrain de jeu
+52 Période 1 1:37 B B7, KUHN F. est entré sur le terrain de jeu
+53 Période 1 1:37 B B9, REBHUN F. est entré sur le terrain de jeu
+54 Période 1 1:37 B B11, HANS Q. est entré sur le terrain de jeu
+ASL DESSENHEIM 56 - 80 DUTTLENHEIM LC
+HISTORIQUE
+Rencontre : Date : Heure :
+Arbitres :
+e-Marque - Fédération Française de Basket-Ball
+BOURQUARD E., CARLADOUS T.
+2097 24/03/18 17:15
+55 Période 1 1:37 A Sens initial de la flèche déterminé : Equipe A
+56 Période 1 1:57 A A5, Thibaut STATH : Tir à 2 points réussi (2)
+57 Période 1 2:57 B B6, Thomas KALTENBACH : Tir à 2 points réussi (4)
+58 Période 1 2:57 A Faute : P1 à A7, 1ère faute personnelle
+59 Période 1 2:57 B B6, Thomas KALTENBACH : Lancer franc réussi (5)
+60 Période 1 3:53 B B5, Thomas OERTEL : Tir à 2 points réussi (2)
+61 Période 1 3:57 B Faute : P à B8, 1ère faute personnelle
+62 Période 1 4:41 B B12, Anthony SIGRIST : Tir à 2 points réussi (7)
+63 Période 1 4:58 A A11, Rafael PLANA : Tir à 2 points réussi (2)
+64 Période 1 5:06 A Faute : P à A5, 2ème faute personnelle
+65 Période 1 5:39 A Faute : P2 à A4, 1ère faute personnelle
+66 Période 1 5:38 B B6, Thomas KALTENBACH : Lancer franc manqué (5)
+67 Période 1 5:38 B B6, Thomas KALTENBACH : Lancer franc manqué (5)
+68 Période 1 6:01 A Faute : P2 à A4, 2ème faute personnelle
+69 Période 1 6:01 B B10, Jules Victor DEL PIN : Lancer franc réussi (3)
+70 Période 1 6:01 B B10, Jules Victor DEL PIN : Lancer franc réussi (4)
+71 Période 1 6:14 B Faute : P à B8, 2ème faute personnelle
+72 Période 1 6:15 A A7, Ugo CHAMASSI : Lancer franc manqué (2)
+73 Période 1 6:15 A A7, Ugo CHAMASSI : Lancer franc réussi (3)
+74 Période 1 6:53 B Faute : P à B11, 1ère faute personnelle
+75 Période 1 7:09 B Faute : P à B11, 2ème faute personnelle
+76 Période 1 7:17 B B9, Florent REBHUN : Tir à 2 points réussi (2)
+77 Période 1 7:29 B Faute : P2 à B9, 1ère faute personnelle
+78 Période 1 7:29 A A7, Ugo CHAMASSI : Lancer franc réussi (4)
+79 Période 1 7:36 A A7, Ugo CHAMASSI : Lancer franc manqué (4)
+80 Période 1 7:39 A A7, Ugo CHAMASSI : Tir à 2 points réussi (6)
+81 Période 1 7:46 B B7, Florian KUHN : Tir à 2 points réussi (2)
+82 Période 1 8:20 A A7, Ugo CHAMASSI : Tir à 2 points réussi (8)
+83 Période 1 8:26 A Faute : P2 à A13, 1ère faute personnelle
+84 Période 1 8:26 B B9, Florent REBHUN : Lancer franc réussi (3)
+85 Période 1 8:27 B B9, Florent REBHUN : Lancer franc manqué (3)
+86 Période 1 8:34 B Flèche retournée, équipe B bénéficiaire
+87 Période 1 8:46 A A8, Leo SCHIELE : Tir à 2 points réussi (2)
+88 Période 1 8:56 A Faute : P2 à A11, 1ère faute personnelle
+89 Période 1 8:58 B B5, Thomas OERTEL : Lancer franc manqué (2)
+90 Période 1 8:58 B B5, Thomas OERTEL : Lancer franc manqué (2)
+91 Période 1 9:05 B B11, Quentin HANS : Tir à 2 points réussi (2)
+92 Période 1 9:22 B B9, Florent REBHUN : Tir à 2 points réussi (5)
+93 Période 1 9:28 B Faute : P2 à B9, 2ème faute personnelle
+94 Période 1 9:28 A A7, Ugo CHAMASSI : Lancer franc manqué (8)
+95 Période 1 9:28 A A7, Ugo CHAMASSI : Lancer franc réussi (9)
+96 Période 1 9:40 A Faute : P2 à A11, 2ème faute personnelle
+97 Période 1 9:40 B B11, Quentin HANS : Lancer franc réussi (3)
+98 Période 1 9:40 B B11, Quentin HANS : Lancer franc réussi (4)
+99 Période 1 10:00 Fin de période : Passage à la période suivante
+100 Période 2 10:02 A Flèche retournée, équipe A bénéficiaire
+101 Période 2 10:41 A A8, Leo SCHIELE : Tir à 2 points réussi (4)
+102 Période 2 11:03 B B11, Quentin HANS : Tir à 2 points réussi (6)
+103 Période 2 11:42 B B11, Quentin HANS : Tir à 2 points réussi (8)
+104 Période 2 11:42 A Faute : P1 à A13, 2ème faute personnelle
+105 Période 2 11:42 B B11, Quentin HANS : Lancer franc réussi (9)
+106 Période 2 11:53 A Temps-Mort (2ème minute)
+107 Période 2 12:03 B Faute : P2 à B6, 1ère faute personnelle
+108 Période 2 12:03 A A7, Ugo CHAMASSI : Lancer franc réussi (10)
+109 Période 2 12:03 A A7, Ugo CHAMASSI : Lancer franc réussi (11)
+110 Période 2 13:38 A A11, Rafael PLANA : Tir à 2 points réussi (4)
+ASL DESSENHEIM 56 - 80 DUTTLENHEIM LC
+HISTORIQUE
+Rencontre : Date : Heure :
+Arbitres :
+e-Marque - Fédération Française de Basket-Ball
+BOURQUARD E., CARLADOUS T.
+2097 24/03/18 17:15
+111 Période 2 13:57 B B9, Florent REBHUN : Tir à 3 points réussi (8)
+112 Période 2 14:11 A Faute : P à A5, 3ème faute personnelle
+113 Période 2 14:29 B B9, Florent REBHUN : Tir à 3 points réussi (11)
+114 Période 2 14:57 A A13, Louis BURCKEL : Tir à 2 points réussi (2)
+115 Période 2 15:22 B Faute : P2 à B6, 2ème faute personnelle
+116 Période 2 15:22 A A8, Leo SCHIELE : Lancer franc réussi (5)
+117 Période 2 15:22 A A8, Leo SCHIELE : Lancer franc réussi (6)
+118 Période 2 16:00 A Faute : P2 à A4, 3ème faute personnelle
+119 Période 2 16:00 B B6, Thomas KALTENBACH : Lancer franc réussi (6)
+120 Période 2 16:02 B B6, Thomas KALTENBACH : Lancer franc manqué (6)
+121 Période 2 16:07 A Faute : P à A9, 1ère faute personnelle
+122 Période 2 16:11 B B6, Thomas KALTENBACH : Tir à 2 points réussi (8)
+123 Période 2 17:29 B Faute : P2 à B6, 3ème faute personnelle
+124 Période 2 17:33 A A13, Louis BURCKEL : Lancer franc manqué (2)
+125 Période 2 17:33 A A13, Louis BURCKEL : Lancer franc manqué (2)
+126 Période 2 18:23 A Faute : P2 à A7, 2ème faute personnelle
+127 Période 2 18:24 B B6, Thomas KALTENBACH : Lancer franc manqué (8)
+128 Période 2 18:24 B B6, Thomas KALTENBACH : Lancer franc réussi (9)
+129 Période 2 18:27 B Faute : P à B8, 3ème faute personnelle
+130 Période 2 18:50 A Faute : P2 à A13, 3ème faute personnelle
+131 Période 2 18:50 B B9, Florent REBHUN : Lancer franc réussi (12)
+132 Période 2 18:51 B B9, Florent REBHUN : Lancer franc manqué (12)
+133 Période 2 19:04 B B5, Thomas OERTEL : Tir à 2 points réussi (4)
+134 Période 2 20:00 B Flèche retournée, équipe B bénéficiaire
+135 Période 2 20:00 Fin de période : Passage à la période suivante
+136 Période 3 20:00 A A4, LIBMAN R. est sorti du terrain de jeu
+137 Période 3 20:00 A A5, STATH T. est sorti du terrain de jeu
+138 Période 3 20:00 A A7, CHAMASSI U. est sorti du terrain de jeu
+139 Période 3 20:00 A A8, SCHIELE L. est sorti du terrain de jeu
+140 Période 3 20:00 A A9, BRENDLE U. est sorti du terrain de jeu
+141 Période 3 20:00 A A10, PREISS-GRUNENWALD P. est sorti du terrain de jeu
+142 Période 3 20:00 A A11, PLANA R. est sorti du terrain de jeu
+143 Période 3 20:00 A A13, BURCKEL L. est sorti du terrain de jeu
+144 Période 3 20:00 B B5, OERTEL T. est sorti du terrain de jeu
+145 Période 3 20:00 B B10, DEL PIN J. est sorti du terrain de jeu
+146 Période 3 20:00 B B8, GEIST A. est sorti du terrain de jeu
+147 Période 3 20:00 B B6, KALTENBACH T. est sorti du terrain de jeu
+148 Période 3 20:00 B B11, HANS Q. est sorti du terrain de jeu
+149 Période 3 20:00 B B12, SIGRIST A. est sorti du terrain de jeu
+150 Période 3 20:00 B B9, REBHUN F. est sorti du terrain de jeu
+151 Période 3 20:00 B B7, KUHN F. est sorti du terrain de jeu
+152 Période 3 20:00 A A5, STATH T. est entré sur le terrain de jeu
+153 Période 3 20:00 A A9, BRENDLE U. est entré sur le terrain de jeu
+154 Période 3 20:00 A A8, SCHIELE L. est entré sur le terrain de jeu
+155 Période 3 20:00 A A11, PLANA R. est entré sur le terrain de jeu
+156 Période 3 20:00 A A7, CHAMASSI U. est entré sur le terrain de jeu
+157 Période 3 20:00 B B7, KUHN F. est entré sur le terrain de jeu
+158 Période 3 20:00 B B5, OERTEL T. est entré sur le terrain de jeu
+159 Période 3 20:00 B B12, SIGRIST A. est entré sur le terrain de jeu
+160 Période 3 20:00 B B10, DEL PIN J. est entré sur le terrain de jeu
+161 Période 3 20:00 B B9, REBHUN F. est entré sur le terrain de jeu
+162 Période 3 21:14 B B12, Anthony SIGRIST : Tir à 2 points réussi (9)
+163 Période 3 21:55 B Evénement annulé :
+B9, Florent REBHUN : Tir à 3 points réussi (15)
+164 Période 3 22:27 A A7, Ugo CHAMASSI : Tir à 2 points réussi (13)
+165 Période 3 22:38 A A9, Ugo BRENDLE : Tir à 2 points réussi (2)
+ASL DESSENHEIM 56 - 80 DUTTLENHEIM LC
+HISTORIQUE
+Rencontre : Date : Heure :
+Arbitres :
+e-Marque - Fédération Française de Basket-Ball
+BOURQUARD E., CARLADOUS T.
+2097 24/03/18 17:15
+166 Période 3 23:33 A Temps-Mort (4ème minute)
+167 Période 3 23:33 B L'événement n°163 a été annulé
+168 Période 3 23:33 B B12, Anthony SIGRIST : Tir à 2 points réussi (11)
+169 Période 3 23:33 B B12, Anthony SIGRIST : Tir à 2 points réussi (13)
+170 Période 3 24:32 A A5, Thibaut STATH : Tir à 2 points réussi (4)
+171 Période 3 24:36 A A4, LIBMAN R. est entré sur le terrain de jeu
+172 Période 3 24:36 A A10, PREISS-GRUNENWALD P. est entré sur le terrain de jeu
+173 Période 3 24:36 A A13, BURCKEL L. est entré sur le terrain de jeu
+174 Période 3 24:37 B B6, KALTENBACH T. est entré sur le terrain de jeu
+175 Période 3 24:38 B B8, GEIST A. est entré sur le terrain de jeu
+176 Période 3 24:38 B B11, HANS Q. est entré sur le terrain de jeu
+177 Période 3 24:53 B Faute : P à B7, 1ère faute personnelle
+178 Période 3 25:44 B B7, Florian KUHN : Tir à 2 points réussi (4)
+179 Période 3 26:20 A A8, Leo SCHIELE : Tir à 2 points réussi (8)
+180 Période 3 26:55 A Faute : U2 à A4, 4ème faute personnelle
+181 Période 3 26:57 B B9, Florent REBHUN : Lancer franc manqué (12)
+182 Période 3 26:57 B B9, Florent REBHUN : Lancer franc réussi (13)
+183 Période 3 27:14 B B5, Thomas OERTEL : Tir à 2 points réussi (6)
+184 Période 3 27:23 A A5, Thibaut STATH : Tir à 2 points réussi (6)
+185 Période 3 27:39 B B9, Florent REBHUN : Tir à 2 points réussi (15)
+186 Période 3 28:06 B B11, Quentin HANS : Tir à 2 points réussi (11)
+187 Période 3 28:22 A A13, Louis BURCKEL : Tir à 2 points réussi (4)
+188 Période 3 28:39 A Faute : P2 à A11, 3ème faute personnelle
+189 Période 3 28:39 B B6, Thomas KALTENBACH : Lancer franc manqué (9)
+190 Période 3 28:39 B B6, Thomas KALTENBACH : Lancer franc manqué (9)
+191 Période 3 28:59 A A7, Ugo CHAMASSI : Tir à 2 points réussi (15)
+192 Période 3 29:22 B B9, Florent REBHUN : Tir à 2 points réussi (17)
+193 Période 3 29:49 B B9, Florent REBHUN : Tir à 3 points réussi (20)
+194 Période 3 29:57 B Faute : P à B5, 1ère faute personnelle
+195 Période 3 29:58 B B6, Thomas KALTENBACH : Lancer franc réussi (10)
+196 Période 3 29:58 Fin de période : Passage à la période suivante
+197 Période 4 30:15 A Faute : P2 à A8, 1ère faute personnelle
+198 Période 4 30:15 B B9, Florent REBHUN : Lancer franc manqué (20)
+199 Période 4 30:15 B B9, Florent REBHUN : Lancer franc réussi (21)
+200 Période 4 32:19 B B11, Quentin HANS : Tir à 2 points réussi (13)
+201 Période 4 33:02 A A13, Louis BURCKEL : Tir à 2 points réussi (6)
+202 Période 4 33:21 A Faute : P à A13, 4ème faute personnelle
+203 Période 4 33:27 B B11, Quentin HANS : Tir à 2 points réussi (15)
+204 Période 4 33:47 A A8, Leo SCHIELE : Tir à 3 points réussi (11)
+205 Période 4 34:13 A A9, Ugo BRENDLE : Tir à 2 points réussi (4)
+206 Période 4 34:23 B B10, Jules Victor DEL PIN : Tir à 2 points réussi (6)
+207 Période 4 34:31 A A5, Thibaut STATH : Tir à 3 points réussi (9)
+208 Période 4 34:31 B Faute : P1 à B5, 2ème faute personnelle
+209 Période 4 34:33 A A5, Thibaut STATH : Lancer franc manqué (9)
+210 Période 4 34:47 B B5, Thomas OERTEL : Tir à 2 points réussi (8)
+211 Période 4 36:18 A A5, Thibaut STATH : Tir à 3 points réussi (12)
+212 Période 4 36:38 A Faute : P à A11, 4ème faute personnelle
+213 Période 4 36:52 B B10, Jules Victor DEL PIN : Tir à 2 points réussi (8)
+214 Période 4 37:39 A Faute : P2 à A11, 5ème faute personnelle
+215 Période 4 37:39 A A11, PLANA R., a été disqualifié suite à l'événement 214
+216 Période 4 37:39 B B7, Florian KUHN : Lancer franc manqué (4)
+217 Période 4 37:39 B B7, Florian KUHN : Lancer franc réussi (5)
+218 Période 4 38:53 A A8, Leo SCHIELE : Tir à 2 points réussi (13)
+219 Période 4 39:08 B Faute : P2 à B10, 1ère faute personnelle
+220 Période 4 39:08 A A5, Thibaut STATH : Lancer franc réussi (13)
+221 Période 4 39:08 A A5, Thibaut STATH : Lancer franc réussi (14)
+ASL DESSENHEIM 56 - 80 DUTTLENHEIM LC
+HISTORIQUE
+Rencontre : Date : Heure :
+Arbitres :
+e-Marque - Fédération Française de Basket-Ball
+BOURQUARD E., CARLADOUS T.
+2097 24/03/18 17:15
+222 Période 4 39:54 B Faute : P à B12, 1ère faute personnelle
+223 Période 4 39:57 B Faute : P à B8, 4ème faute personnelle
+224 Période 4 39:57 Fin du match
+225 Période 4 39:57 A A4, LIBMAN R. est sorti du terrain de jeu
+226 Période 4 39:57 A A5, STATH T. est sorti du terrain de jeu
+227 Période 4 39:57 A A7, CHAMASSI U. est sorti du terrain de jeu
+228 Période 4 39:57 A A8, SCHIELE L. est sorti du terrain de jeu
+229 Période 4 39:57 A A9, BRENDLE U. est sorti du terrain de jeu
+230 Période 4 39:57 A A10, PREISS-GRUNENWALD P. est sorti du terrain de jeu
+231 Période 4 39:57 A A13, BURCKEL L. est sorti du terrain de jeu
+232 Période 4 39:57 B B5, OERTEL T. est sorti du terrain de jeu
+233 Période 4 39:57 B B10, DEL PIN J. est sorti du terrain de jeu
+234 Période 4 39:57 B B8, GEIST A. est sorti du terrain de jeu
+235 Période 4 39:57 B B6, KALTENBACH T. est sorti du terrain de jeu
+236 Période 4 39:57 B B11, HANS Q. est sorti du terrain de jeu
+237 Période 4 39:57 B B12, SIGRIST A. est sorti du terrain de jeu
+238 Période 4 39:57 B B9, REBHUN F. est sorti du terrain de jeu
+239 Période 4 39:57 B B7, KUHN F. est sorti du terrain de jeu
+240 Après match 18h44 Clôture de la rencontre
+ASL DESSENHEIM 56 - 80 DUTTLENHEIM LC

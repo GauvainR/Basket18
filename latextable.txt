@@ -1,0 +1,2512 @@
+
+\documentclass[a4paper]{report}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{array}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{setspace} % pour augmenter l'interligne des abréviations
+\usepackage[top=1.8cm,bottom=1.5cm,right=0.5cm,left=0.5cm]{geometry} % pour les marges
+\usepackage{indentfirst}
+\usepackage{subfigure}
+% \usepackage{subcaption}
+\usepackage{colortbl} %pour la couleur des tables
+\usepackage{makecell} % pour définir des cellules spécifiques dans les tableaux
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}  % definition de cellule specifique pour les tableaux
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}} % definition de cellule specifique pour les tableaux
+\setlength{\parindent}{3em}
+\setlength{\parskip}{1em}
+\renewcommand\arraystretch{1.5}
+
+
+% custom footers and headers
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\lhead{ABC LUTTERBACH}
+\chead{}
+\rhead{Saison 2017-2018}
+\lfoot{basketstatistiques.fr}
+\cfoot{\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\begin{document}
+
+\title{
+\includegraphics[width=0.5\textwidth]{couverture} \\
+\vspace{100pt}
+\Huge\bfseries ABC LUTTERBACH \\
+\vspace{50pt}
+\Huge\bfseries R2M \\
+\vspace{150pt}
+\Huge \bfseries Statistiques \\
+\vspace{50 pt}
+\huge \bfseries Saison 2017-2018 \\
+}
+
+\maketitle
+\newgeometry{left=3cm,bottom=3cm}
+\chapter*{Abréviations}
+\large
+\begin{spacing}{1.2}
+\noindent\textbf{2 int}: deux point intérieurs réussis \\
+\textbf{2 ext}: deux point extérieurs réussis \\
+\textbf{3 pts}: trois points réussis\\
+\textbf{age}: age du joueur au 31/12/2017 ou moyenne d'age de l'équipe\\
+\textbf{ftes}: fautes commises\\
+\textbf{ftes p.}: fautes provoquées\\
+\textbf{LF c.}: lancers francs concédés\\
+\textbf{LF m.}: lancers francs marqués\\
+\textbf{LF t.}: lancers francs tirés\\
+\textbf{LF \%}: pourcentage aux lancers francs\\
+\textbf{MJ}: matchs joués\\
+\textbf{nom}: nom du joueur\\
+\textbf{pts}: points marqués\\
+\textbf{pts 5}: points marqués par le 5 de base\\
+\textbf{pts bc}: points marqués par les rempla\c{c}ants \\
+\textbf{pts e.}: points encaissés\\
+\textbf{pts m.}: points marqués\\
+\textbf{tdj}: temps de jeu\\
+\textbf{tirs}: tirs réussis\\
+\textbf{vs.}: match à domicile\\
+\textbf{a}: match à l'extérieur\\
+\textbf{+}: points marqués par l'équipe lorsque le joueur était sur le terrain\\
+\textbf{-}: points encaissés par l'équipe lorsque le joueur était sur le terrain\\
+\textbf{+/-}: écart lorsque le joueur était sur le terrain\\
+\textbf{\% pts 5}: pourcentage des points totaux marqués par le 5 de base\\
+\textbf{\#}: numéro du joueur\\
+\textbf{*}: joueur dans le 5 de base\\
+\end{spacing}
+\normalsize
+\restoregeometry
+
+\newpage
+\thispagestyle{empty}
+\begin{center}
+\vspace*{\fill}
+\includegraphics[width=0.6\textwidth]{logo_BS_ecrit_noir} \\
+\vspace{120pt}
+\Huge\bfseries Statistiques  \\
+\vspace{30pt} \Huge\bfseries Collectives  \\
+\vspace{90pt} \vspace*{\fill} \end{center}
+
+\newpage
+\begin{center}
+\section*{Stats collectives}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lcccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & pts m. & pts e. & pts 5 & pts bc & \% pts 5 & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & ftes p. & âge  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+@. HATTMATT SS&65&68&53&12&81.5&22&5&3&14&16&30&53.3&28&32&20&
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. SELESTAT BC&57&70&44&13&77.2&18&2&2&14&19&29&65.5&22&20&19&
+\\
+\rowcolor[HTML]{EEEEEE}
+@. GEISPOLSHEIM CJS &74&85&68&6&91.9&26&3&3&20&19&31&61.3&18&17&22&24.6
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. FC MULHOUSE BASK&85&45&44&41&51.8&34&7&4&23&10&20&50.0&12&13&14&23.2
+\\
+\rowcolor[HTML]{EEEEEE}
+@. SCHILTIGHEIM AU&59&68&39&20&66.1&19&5&8&6&16&32&50.0&29&36&26&24.6
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. ASC STE AFRE RIE&70&86&37&33&52.9&25&5&4&16&15&19&78.9&25&25&17&
+\\
+\rowcolor[HTML]{EEEEEE}
+@. STRASBOURG ST JOS&77&89&52&25&67.5&29&5&3&21&14&23&60.9&16&18&18&23.6
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. HOLTZHEIM VOGESI&74&62&51&23&68.9&27&6&10&11&14&26&53.8&33&42&23&23.5
+\\
+\rowcolor[HTML]{EEEEEE}
+@. WANTZENAU (LA) AS&91&74&68&23&74.7&34&5&5&24&18&25&72.0&25&24&17&23.9
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. FC ST LEON EGUIS&63&55&51&12&81.0&20&5&5&10&18&33&54.5&19&14&29&23.5
+\\
+\rowcolor[HTML]{EEEEEE}
+@. BERRWILLER STAFFE&59&69&44&15&74.6&23&1&2&20&12&25&48.0&23&22&18&24.4
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. HATTMATT SS&68&71&42&26&61.8&23&5&5&13&17&24&70.8&31&30&18&26.1
+\\
+\rowcolor[HTML]{EEEEEE}
+@. SELESTAT BC&53&64&49&4&92.5&18&0&6&12&17&23&73.9&26&31&21&25.1
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. GEISPOLSHEIM CJS&96&84&77&19&80.2&38&10&12&16&10&19&52.6&24&32&16&24.9
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{EEEEEE}
+\textbf{Total} & 991&991&719&272&72.6&356&64&72&220&215&359&59.9&331&356&278&-
+\\
+\rowcolor[HTML]{F9F9F9}
+\textbf{Moyenne} & 70.8&70.8&51.4&19.4&72.6&25.4&4.6&5.1&15.7&15.4&25.6&59.9&23.6&25.4&19.9&24.3
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{Stats moyennes par match}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & MJ & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+ALBRECHT SERGE & 12 & 19.1 & 2.0 & 0.6 & 0.3 & 0.2 & 0.1 & 0.5 & 0.8 & 60.0 & 1.9 & 1.4 & 35.8 & 34.6 & 1.2
+\\
+\rowcolor[HTML]{F9F9F9}
+BOUHASSANE SOFIANE & 13 & 21.9 & 4.2 & 1.5 & 0.4 & 0.5 & 0.6 & 0.7 & 1.1 & 64.3 & 1.9 & 1.7 & 36.1 & 39.1 & -3.0
+\\
+\rowcolor[HTML]{EEEEEE}
+DA COSTA ADRIEN & 14 & 20.9 & 5.3 & 1.7 & 0.1 & 0.4 & 1.1 & 1.7 & 3.4 & 51.1 & 1.7 & 1.8 & 37.5 & 35.1 & 2.4
+\\
+\rowcolor[HTML]{F9F9F9}
+DELERS JONATHAN & 1 & 15.6 & 4.0 & 1.0 & 0.0 & 0.0 & 1.0 & 2.0 & 2.0 & 100.0 & 3.0 & 4.0 & 25.0 & 28.0 & -3.0
+\\
+\rowcolor[HTML]{EEEEEE}
+FISCHER BAPTISTE & 5 & 13.9 & 4.0 & 1.6 & 0.0 & 0.0 & 1.6 & 0.8 & 1.4 & 57.1 & 2.6 & 3.2 & 23.2 & 22.8 & 0.4
+\\
+\rowcolor[HTML]{F9F9F9}
+FREDJ SALEM & 14 & 22.4 & 11.2 & 4.6 & 0.6 & 0.8 & 3.2 & 1.3 & 2.4 & 54.5 & 2.9 & 3.6 & 40.7 & 38.9 & 1.8
+\\
+\rowcolor[HTML]{EEEEEE}
+GERBER QUENTIN & 14 & 28.2 & 13.2 & 3.6 & 1.1 & 0.4 & 2.0 & 4.9 & 7.3 & 67.6 & 3.4 & 3.4 & 53.4 & 47.3 & 6.1
+\\
+\rowcolor[HTML]{F9F9F9}
+HALM CYRIL & 9 & 22.7 & 10.1 & 4.3 & 0.1 & 1.6 & 2.7 & 1.3 & 2.8 & 48.0 & 3.6 & 4.2 & 35.9 & 43.8 & -7.9
+\\
+\rowcolor[HTML]{EEEEEE}
+KAUFFER HUGO & 11 & 16.4 & 3.4 & 1.3 & 0.1 & 0.2 & 1.0 & 0.7 & 1.7 & 42.1 & 2.3 & 2.8 & 29.3 & 27.9 & 1.4
+\\
+\rowcolor[HTML]{F9F9F9}
+LUDE DONOVAN & 4 & 16.7 & 7.8 & 3.0 & 0.0 & 0.3 & 2.8 & 1.8 & 3.3 & 53.8 & 2.8 & 2.3 & 27.3 & 28.8 & -1.5
+\\
+\rowcolor[HTML]{EEEEEE}
+NETTE BASTIEN & 13 & 30.1 & 15.6 & 5.6 & 1.0 & 1.2 & 3.4 & 3.4 & 5.2 & 64.7 & 2.9 & 3.4 & 55.9 & 52.4 & 3.5
+\\
+\rowcolor[HTML]{F9F9F9}
+ORTLIEB JORDAN & 11 & 17.6 & 3.5 & 1.2 & 0.6 & 0.1 & 0.5 & 0.5 & 0.7 & 62.5 & 1.5 & 2.2 & 30.1 & 31.6 & -1.5
+\\
+\rowcolor[HTML]{EEEEEE}
+RENGER MAXIME & 1 & 17.9 & 4.0 & 2.0 & 0.0 & 0.0 & 2.0 & 0.0 & 0.0 & - & 3.0 & 4.0 & 18.0 & 21.0 & -3.0
+\\
+\rowcolor[HTML]{F9F9F9}
+RUDLER GAUVAIN & 1 & 20.5 & 6.0 & 2.0 & 0.0 & 0.0 & 2.0 & 2.0 & 4.0 & 50.0 & 2.0 & 2.0 & 31.0 & 50.0 & -19.0
+\\
+\rowcolor[HTML]{EEEEEE}
+WALCH FRANCK & 11 & 13.5 & 5.7 & 2.4 & 0.5 & 0.5 & 1.3 & 0.5 & 0.6 & 71.4 & 2.2 & 1.5 & 20.5 & 25.3 & -4.7
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{Stats totales}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & MJ & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+ALBRECHT SERGE & 12 & 229.0 & 24 & 7 & 4 & 2 & 1 & 6 & 10 & 60.0 & 23 & 17 & 429 & 415 & 14
+\\
+\rowcolor[HTML]{F9F9F9}
+BOUHASSANE SOFIANE & 13 & 285.2 & 54 & 20 & 5 & 7 & 8 & 9 & 14 & 64.3 & 25 & 22 & 469 & 508 & -39
+\\
+\rowcolor[HTML]{EEEEEE}
+DA COSTA ADRIEN & 14 & 292.5 & 74 & 24 & 2 & 6 & 16 & 24 & 47 & 51.1 & 24 & 25 & 525 & 491 & 34
+\\
+\rowcolor[HTML]{F9F9F9}
+DELERS JONATHAN & 1 & 15.6 & 4 & 1 & 0 & 0 & 1 & 2 & 2 & 100.0 & 3 & 4 & 25 & 28 & -3
+\\
+\rowcolor[HTML]{EEEEEE}
+FISCHER BAPTISTE & 5 & 69.4 & 20 & 8 & 0 & 0 & 8 & 4 & 7 & 57.1 & 13 & 16 & 116 & 114 & 2
+\\
+\rowcolor[HTML]{F9F9F9}
+FREDJ SALEM & 14 & 313.0 & 157 & 65 & 9 & 11 & 45 & 18 & 33 & 54.5 & 40 & 50 & 570 & 545 & 25
+\\
+\rowcolor[HTML]{EEEEEE}
+GERBER QUENTIN & 14 & 394.9 & 185 & 50 & 16 & 6 & 28 & 69 & 102 & 67.6 & 48 & 48 & 747 & 662 & 85
+\\
+\rowcolor[HTML]{F9F9F9}
+HALM CYRIL & 9 & 203.9 & 91 & 39 & 1 & 14 & 24 & 12 & 25 & 48.0 & 32 & 38 & 323 & 394 & -71
+\\
+\rowcolor[HTML]{EEEEEE}
+KAUFFER HUGO & 11 & 180.5 & 37 & 14 & 1 & 2 & 11 & 8 & 19 & 42.1 & 25 & 31 & 322 & 307 & 15
+\\
+\rowcolor[HTML]{F9F9F9}
+LUDE DONOVAN & 4 & 66.6 & 31 & 12 & 0 & 1 & 11 & 7 & 13 & 53.8 & 11 & 9 & 109 & 115 & -6
+\\
+\rowcolor[HTML]{EEEEEE}
+NETTE BASTIEN & 13 & 391.6 & 203 & 73 & 13 & 16 & 44 & 44 & 68 & 64.7 & 38 & 44 & 727 & 681 & 46
+\\
+\rowcolor[HTML]{F9F9F9}
+ORTLIEB JORDAN & 11 & 193.9 & 38 & 13 & 7 & 1 & 5 & 5 & 8 & 62.5 & 17 & 24 & 331 & 348 & -17
+\\
+\rowcolor[HTML]{EEEEEE}
+RENGER MAXIME & 1 & 17.9 & 4 & 2 & 0 & 0 & 2 & 0 & 0 & - & 3 & 4 & 18 & 21 & -3
+\\
+\rowcolor[HTML]{F9F9F9}
+RUDLER GAUVAIN & 1 & 20.5 & 6 & 2 & 0 & 0 & 2 & 2 & 4 & 50.0 & 2 & 2 & 31 & 50 & -19
+\\
+\rowcolor[HTML]{EEEEEE}
+WALCH FRANCK & 11 & 148.8 & 63 & 26 & 6 & 6 & 14 & 5 & 7 & 71.4 & 24 & 17 & 226 & 278 & -52
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{Stats ramenées sur 40 minutes}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & MJ & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+ALBRECHT SERGE & 12 & 40 & 4.2 & 1.2 & 0.7 & 0.3 & 0.2 & 1.0 & 1.7 & 60.0 & 4.0 & 3.0 & 74.9 & 72.5 & 2.4
+\\
+\rowcolor[HTML]{F9F9F9}
+BOUHASSANE SOFIANE & 13 & 40 & 7.6 & 2.8 & 0.7 & 1.0 & 1.1 & 1.3 & 2.0 & 64.3 & 3.5 & 3.1 & 65.8 & 71.3 & -5.5
+\\
+\rowcolor[HTML]{EEEEEE}
+DA COSTA ADRIEN & 14 & 40 & 10.1 & 3.3 & 0.3 & 0.8 & 2.2 & 3.3 & 6.4 & 51.1 & 3.3 & 3.4 & 71.8 & 67.2 & 4.7
+\\
+\rowcolor[HTML]{F9F9F9}
+DELERS JONATHAN & 1 & 40 & 10.3 & 2.6 & 0.0 & 0.0 & 2.6 & 5.1 & 5.1 & 100.0 & 7.7 & 10.3 & 64.2 & 71.9 & -7.7
+\\
+\rowcolor[HTML]{EEEEEE}
+FISCHER BAPTISTE & 5 & 40 & 11.5 & 4.6 & 0.0 & 0.0 & 4.6 & 2.3 & 4.0 & 57.1 & 7.5 & 9.2 & 66.9 & 65.7 & 1.2
+\\
+\rowcolor[HTML]{F9F9F9}
+FREDJ SALEM & 14 & 40 & 20.1 & 8.3 & 1.1 & 1.4 & 5.7 & 2.3 & 4.2 & 54.5 & 5.1 & 6.4 & 72.8 & 69.6 & 3.2
+\\
+\rowcolor[HTML]{EEEEEE}
+GERBER QUENTIN & 14 & 40 & 18.7 & 5.1 & 1.6 & 0.6 & 2.8 & 7.0 & 10.3 & 67.6 & 4.9 & 4.9 & 75.7 & 67.1 & 8.6
+\\
+\rowcolor[HTML]{F9F9F9}
+HALM CYRIL & 9 & 40 & 17.9 & 7.7 & 0.2 & 2.7 & 4.7 & 2.4 & 4.9 & 48.0 & 6.3 & 7.5 & 63.4 & 77.3 & -13.9
+\\
+\rowcolor[HTML]{EEEEEE}
+KAUFFER HUGO & 11 & 40 & 8.2 & 3.1 & 0.2 & 0.4 & 2.4 & 1.8 & 4.2 & 42.1 & 5.5 & 6.9 & 71.3 & 68.0 & 3.3
+\\
+\rowcolor[HTML]{F9F9F9}
+LUDE DONOVAN & 4 & 40 & 18.6 & 7.2 & 0.0 & 0.6 & 6.6 & 4.2 & 7.8 & 53.8 & 6.6 & 5.4 & 65.4 & 69.0 & -3.6
+\\
+\rowcolor[HTML]{EEEEEE}
+NETTE BASTIEN & 13 & 40 & 20.7 & 7.5 & 1.3 & 1.6 & 4.5 & 4.5 & 6.9 & 64.7 & 3.9 & 4.5 & 74.3 & 69.6 & 4.7
+\\
+\rowcolor[HTML]{F9F9F9}
+ORTLIEB JORDAN & 11 & 40 & 7.8 & 2.7 & 1.4 & 0.2 & 1.0 & 1.0 & 1.7 & 62.5 & 3.5 & 5.0 & 68.3 & 71.8 & -3.5
+\\
+\rowcolor[HTML]{EEEEEE}
+RENGER MAXIME & 1 & 40 & 8.9 & 4.5 & 0.0 & 0.0 & 4.5 & 0.0 & 0.0 & - & 6.7 & 8.9 & 40.1 & 46.8 & -6.7
+\\
+\rowcolor[HTML]{F9F9F9}
+RUDLER GAUVAIN & 1 & 40 & 11.7 & 3.9 & 0.0 & 0.0 & 3.9 & 3.9 & 7.8 & 50.0 & 3.9 & 3.9 & 60.5 & 97.6 & -37.1
+\\
+\rowcolor[HTML]{EEEEEE}
+WALCH FRANCK & 11 & 40 & 16.9 & 7.0 & 1.6 & 1.6 & 3.8 & 1.3 & 1.9 & 71.4 & 6.5 & 4.6 & 60.8 & 74.7 & -14.0
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\thispagestyle{empty}
+\begin{center}
+\vspace*{\fill}
+\includegraphics[width=0.6\textwidth]{logo_BS_ecrit_noir} \\
+\vspace{120pt}
+\Huge\bfseries Statistiques  \\
+\vspace{30pt} \Huge\bfseries Individuelles  \\
+\vspace{90pt} \vspace*{\fill} \end{center}
+\newpage
+\begin{center}
+\section*{ALBRECHT SERGE (1991)}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lcccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+vs. SELESTAT BC&21.0&0&0&0&0&0&0&0&-&0&0&39&36&+3
+\\
+\rowcolor[HTML]{F9F9F9}
+@ GEISPOLSHEIM CJS 2&19.3&1&0&0&0&0&1&2&50.0&2&2&41&45&-4
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. FC MULHOUSE BASK&4.1&0&0&0&0&0&0&0&-&0&0&13&0&+13
+\\
+\rowcolor[HTML]{F9F9F9}
+@ SCHILTIGHEIM AU&18.0&4&2&0&2&0&0&0&-&1&0&25&29&-4
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. ASC STE AFRE RIE&22.3&0&0&0&0&0&0&0&-&1&0&40&41&-1
+\\
+\rowcolor[HTML]{F9F9F9}
+@ STRASBOURG ST JOSE&24.0&4&1&1&0&0&1&2&50.0&2&2&52&56&-4
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. HOLTZHEIM VOGESI&15.3&5&1&1&0&0&2&2&100.0&5&5&36&20&+16
+\\
+\rowcolor[HTML]{F9F9F9}
+@ WANTZENAU (LA) ASC&18.9&4&1&0&0&1&2&2&100.0&4&4&39&42&-3
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. FC ST LEON EGUIS&22.4&0&0&0&0&0&0&2&0.0&2&0&38&29&+9
+\\
+\rowcolor[HTML]{F9F9F9}
+@ BERRWILLER STAFFEL&17.4&3&1&1&0&0&0&0&-&2&0&30&34&-4
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. HATTMATT SS&27.6&3&1&1&0&0&0&0&-&3&2&39&45&-6
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. GEISPOLSHEIM CJS&18.7&0&0&0&0&0&0&0&-&1&2&37&38&-1
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{EEEEEE}
+\textbf{Total} & 229.0 & 24 & 7 & 4 & 2 & 1 & 6 & 10 & 60.0 & 23 & 17 & 429 & 415 & +14
+\\
+\rowcolor[HTML]{F9F9F9}
+\textbf{Stats sur 40 min} & 40.0 & 4.2 & 1.2 & 0.7 & 0.3 & 0.2 & 1.0 & 1.7 & 60.0 & 4.0 & 3.0 & 74.9 & 72.5 & +2.4
+\\
+\rowcolor[HTML]{EEEEEE}
+\textbf{Moyenne} & 19.1 & 2.0 & 0.6 & 0.3 & 0.2 & 0.1 & 0.5 & 0.8 & 60.0 & 1.9 & 1.4 & 35.8 & 34.6 & +1.2
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{BOUHASSANE SOFIANE (1991)}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lcccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+@ HATTMATT SS&26.9&7&3&1&0&2&0&0&-&2&4&39&42&-3
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. SELESTAT BC&11.7&0&0&0&0&0&0&0&-&2&0&8&22&-14
+\\
+\rowcolor[HTML]{EEEEEE}
+@ GEISPOLSHEIM CJS 2&23.3&5&2&1&0&1&0&0&-&1&0&38&42&-4
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. FC MULHOUSE BASK&21.9&4&2&0&1&1&0&0&-&2&2&44&30&+14
+\\
+\rowcolor[HTML]{EEEEEE}
+@ SCHILTIGHEIM AU&21.0&0&0&0&0&0&0&0&-&1&2&33&44&-11
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. ASC STE AFRE RIE&20.0&2&0&0&0&0&2&2&100.0&5&6&36&48&-12
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. HOLTZHEIM VOGESI&20.9&0&0&0&0&0&0&2&0.0&0&0&31&45&-14
+\\
+\rowcolor[HTML]{F9F9F9}
+@ WANTZENAU (LA) ASC&18.0&7&3&1&2&0&0&0&-&3&0&48&30&+18
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. FC ST LEON EGUIS&17.1&8&2&1&1&0&3&4&75.0&3&0&32&27&+5
+\\
+\rowcolor[HTML]{F9F9F9}
+@ BERRWILLER STAFFEL&21.1&3&1&0&0&1&1&2&50.0&2&3&28&32&-4
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. HATTMATT SS&26.4&3&1&1&0&0&0&0&-&1&2&42&44&-2
+\\
+\rowcolor[HTML]{F9F9F9}
+@ SELESTAT BC&29.9&7&2&0&1&1&3&4&75.0&3&3&33&53&-20
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. GEISPOLSHEIM CJS&26.9&8&4&0&2&2&0&0&-&0&0&57&49&+8
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+\textbf{Total} & 285.2 & 54 & 20 & 5 & 7 & 8 & 9 & 14 & 64.3 & 25 & 22 & 469 & 508 & -39
+\\
+\rowcolor[HTML]{EEEEEE}
+\textbf{Stats sur 40 min} & 40.0 & 7.6 & 2.8 & 0.7 & 1.0 & 1.1 & 1.3 & 2.0 & 64.3 & 3.5 & 3.1 & 65.8 & 71.3 & -5.5
+\\
+\rowcolor[HTML]{F9F9F9}
+\textbf{Moyenne} & 21.9 & 4.2 & 1.5 & 0.4 & 0.5 & 0.6 & 0.7 & 1.1 & 64.3 & 1.9 & 1.7 & 36.1 & 39.1 & -3.0
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{DA COSTA ADRIEN (1995)}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lcccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+@ HATTMATT SS&26.2&5&1&0&0&1&3&10&30.0&2&2&39&39&0
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. SELESTAT BC&14.0&2&1&0&0&1&0&1&0.0&2&0&20&25&-5
+\\
+\rowcolor[HTML]{EEEEEE}
+@ GEISPOLSHEIM CJS 2&26.5&5&0&0&0&0&5&10&50.0&2&2&50&59&-9
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. FC MULHOUSE BASK&19.6&2&1&0&0&1&0&2&0.0&0&0&47&16&+31
+\\
+\rowcolor[HTML]{EEEEEE}
+@ SCHILTIGHEIM AU&18.1&7&2&1&0&1&2&2&100.0&2&3&24&28&-4
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. ASC STE AFRE RIE&15.8&1&0&0&0&0&1&2&50.0&2&0&28&31&-3
+\\
+\rowcolor[HTML]{EEEEEE}
+@ STRASBOURG ST JOSE&23.5&9&4&0&0&4&1&2&50.0&1&2&44&53&-9
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. HOLTZHEIM VOGESI&20.0&2&1&0&1&0&0&0&-&4&7&35&26&+9
+\\
+\rowcolor[HTML]{EEEEEE}
+@ WANTZENAU (LA) ASC&18.7&13&5&1&0&4&2&4&50.0&2&3&47&32&+15
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. FC ST LEON EGUIS&23.5&9&3&0&2&1&3&4&75.0&0&0&40&33&+7
+\\
+\rowcolor[HTML]{EEEEEE}
+@ BERRWILLER STAFFEL&12.5&2&1&0&0&1&0&0&-&1&0&20&22&-2
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. HATTMATT SS&24.8&7&2&0&1&1&3&4&75.0&2&2&41&39&+2
+\\
+\rowcolor[HTML]{EEEEEE}
+@ SELESTAT BC&31.6&7&2&0&2&0&3&4&75.0&0&0&45&57&-12
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. GEISPOLSHEIM CJS&17.8&3&1&0&0&1&1&2&50.0&4&4&45&31&+14
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{EEEEEE}
+\textbf{Total} & 292.5 & 74 & 24 & 2 & 6 & 16 & 24 & 47 & 51.1 & 24 & 25 & 525 & 491 & +34
+\\
+\rowcolor[HTML]{F9F9F9}
+\textbf{Stats sur 40 min} & 40.0 & 10.1 & 3.3 & 0.3 & 0.8 & 2.2 & 3.3 & 6.4 & 51.1 & 3.3 & 3.4 & 71.8 & 67.2 & +4.7
+\\
+\rowcolor[HTML]{EEEEEE}
+\textbf{Moyenne} & 20.9 & 5.3 & 1.7 & 0.1 & 0.4 & 1.1 & 1.7 & 3.4 & 51.1 & 1.7 & 1.8 & 37.5 & 35.1 & +2.4
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{DELERS JONATHAN (1980)}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lcccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+vs. HATTMATT SS&15.6&4&1&0&0&1&2&2&100.0&3&4&25&28&-3
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+\textbf{Total} & 15.6 & 4 & 1 & 0 & 0 & 1 & 2 & 2 & 100.0 & 3 & 4 & 25 & 28 & -3
+\\
+\rowcolor[HTML]{EEEEEE}
+\textbf{Stats sur 40 min} & 40.0 & 10.3 & 2.6 & 0.0 & 0.0 & 2.6 & 5.1 & 5.1 & 100.0 & 7.7 & 10.3 & 64.2 & 71.9 & -7.7
+\\
+\rowcolor[HTML]{F9F9F9}
+\textbf{Moyenne} & 15.6 & 4.0 & 1.0 & 0.0 & 0.0 & 1.0 & 2.0 & 2.0 & 100.0 & 3.0 & 4.0 & 25.0 & 28.0 & -3.0
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{FISCHER BAPTISTE (1995)}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lcccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+@ HATTMATT SS&17.4&4&1&0&0&1&2&4&50.0&2&2&27&37&-10
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. FC MULHOUSE BASK&13.7&10&5&0&0&5&0&0&-&1&2&25&11&+14
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. HOLTZHEIM VOGESI&15.1&5&2&0&0&2&1&1&100.0&5&7&41&41&0
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. FC ST LEON EGUIS&15.3&1&0&0&0&0&1&2&50.0&2&3&18&19&-1
+\\
+\rowcolor[HTML]{EEEEEE}
+@ SELESTAT BC&7.9&0&0&0&0&0&0&0&-&3&2&5&6&-1
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+\textbf{Total} & 69.4 & 20 & 8 & 0 & 0 & 8 & 4 & 7 & 57.1 & 13 & 16 & 116 & 114 & +2
+\\
+\rowcolor[HTML]{EEEEEE}
+\textbf{Stats sur 40 min} & 40.0 & 11.5 & 4.6 & 0.0 & 0.0 & 4.6 & 2.3 & 4.0 & 57.1 & 7.5 & 9.2 & 66.9 & 65.7 & +1.2
+\\
+\rowcolor[HTML]{F9F9F9}
+\textbf{Moyenne} & 13.9 & 4.0 & 1.6 & 0.0 & 0.0 & 1.6 & 0.8 & 1.4 & 57.1 & 2.6 & 3.2 & 23.2 & 22.8 & +0.4
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{FREDJ SALEM (1998)}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lcccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+@ HATTMATT SS&19.7&6&3&0&1&2&0&0&-&5&8&35&24&+11
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. SELESTAT BC&24.7&14&6&1&1&4&1&2&50.0&1&2&42&39&+3
+\\
+\rowcolor[HTML]{EEEEEE}
+@ GEISPOLSHEIM CJS 2&25.7&16&7&0&1&6&2&3&66.7&2&2&53&62&-9
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. FC MULHOUSE BASK&22.6&13&5&1&1&3&2&4&50.0&2&3&54&22&+32
+\\
+\rowcolor[HTML]{EEEEEE}
+@ SCHILTIGHEIM AU&21.5&7&2&2&0&0&1&4&25.0&3&4&38&38&0
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. ASC STE AFRE RIE&17.7&10&5&0&1&4&0&0&-&3&1&34&33&+1
+\\
+\rowcolor[HTML]{EEEEEE}
+@ STRASBOURG ST JOSE&16.5&4&2&0&0&2&0&0&-&2&3&29&38&-9
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. HOLTZHEIM VOGESI&20.9&14&6&0&3&3&2&3&66.7&4&6&36&31&+5
+\\
+\rowcolor[HTML]{EEEEEE}
+@ WANTZENAU (LA) ASC&22.0&7&3&0&0&3&1&2&50.0&2&4&43&44&-1
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. FC ST LEON EGUIS&18.6&10&4&1&0&3&1&4&25.0&2&3&25&25&0
+\\
+\rowcolor[HTML]{EEEEEE}
+@ BERRWILLER STAFFEL&23.2&6&3&0&0&3&0&2&0.0&1&0&29&35&-6
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. HATTMATT SS&21.0&8&3&0&1&2&2&2&100.0&5&3&30&34&-4
+\\
+\rowcolor[HTML]{EEEEEE}
+@ SELESTAT BC&28.8&20&7&0&0&7&6&7&85.7&4&5&45&53&-8
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. GEISPOLSHEIM CJS&30.1&22&9&4&2&3&0&0&-&4&6&77&67&+10
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{EEEEEE}
+\textbf{Total} & 313.0 & 157 & 65 & 9 & 11 & 45 & 18 & 33 & 54.5 & 40 & 50 & 570 & 545 & +25
+\\
+\rowcolor[HTML]{F9F9F9}
+\textbf{Stats sur 40 min} & 40.0 & 20.1 & 8.3 & 1.1 & 1.4 & 5.7 & 2.3 & 4.2 & 54.5 & 5.1 & 6.4 & 72.8 & 69.6 & +3.2
+\\
+\rowcolor[HTML]{EEEEEE}
+\textbf{Moyenne} & 22.4 & 11.2 & 4.6 & 0.6 & 0.8 & 3.2 & 1.3 & 2.4 & 54.5 & 2.9 & 3.6 & 40.7 & 38.9 & +1.8
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{GERBER QUENTIN (1992)}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lcccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+@ HATTMATT SS&25.8&12&3&1&0&2&5&6&83.3&5&2&45&36&+9
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. SELESTAT BC&28.4&12&1&0&0&1&10&13&76.9&4&6&48&48&0
+\\
+\rowcolor[HTML]{EEEEEE}
+@ GEISPOLSHEIM CJS 2&35.9&20&6&0&0&6&8&10&80.0&3&4&74&73&+1
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. FC MULHOUSE BASK&28.4&15&5&4&0&1&1&2&50.0&0&0&65&31&+34
+\\
+\rowcolor[HTML]{EEEEEE}
+@ SCHILTIGHEIM AU&14.4&10&3&1&1&1&3&6&50.0&5&6&24&27&-3
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. ASC STE AFRE RIE&21.5&8&2&2&0&0&2&2&100.0&5&6&32&45&-13
+\\
+\rowcolor[HTML]{EEEEEE}
+@ STRASBOURG ST JOSE&33.9&6&1&1&0&0&3&4&75.0&2&0&70&71&-1
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. HOLTZHEIM VOGESI&34.1&17&6&0&3&3&5&9&55.6&3&6&68&45&+23
+\\
+\rowcolor[HTML]{EEEEEE}
+@ WANTZENAU (LA) ASC&32.0&24&7&1&0&6&9&12&75.0&3&2&80&55&+25
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. FC ST LEON EGUIS&29.8&9&2&2&0&0&3&8&37.5&3&2&47&38&+9
+\\
+\rowcolor[HTML]{EEEEEE}
+@ BERRWILLER STAFFEL&32.2&15&4&0&0&4&7&9&77.8&2&2&50&50&0
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. HATTMATT SS&27.4&16&5&1&1&3&5&7&71.4&5&2&48&38&+10
+\\
+\rowcolor[HTML]{EEEEEE}
+@ SELESTAT BC&29.9&5&0&0&0&0&5&8&62.5&5&4&46&53&-7
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. GEISPOLSHEIM CJS&21.2&16&5&3&1&1&3&6&50.0&3&6&50&52&-2
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{EEEEEE}
+\textbf{Total} & 394.9 & 185 & 50 & 16 & 6 & 28 & 69 & 102 & 67.6 & 48 & 48 & 747 & 662 & +85
+\\
+\rowcolor[HTML]{F9F9F9}
+\textbf{Stats sur 40 min} & 40.0 & 18.7 & 5.1 & 1.6 & 0.6 & 2.8 & 7.0 & 10.3 & 67.6 & 4.9 & 4.9 & 75.7 & 67.1 & +8.6
+\\
+\rowcolor[HTML]{EEEEEE}
+\textbf{Moyenne} & 28.2 & 13.2 & 3.6 & 1.1 & 0.4 & 2.0 & 4.9 & 7.3 & 67.6 & 3.4 & 3.4 & 53.4 & 47.3 & +6.1
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{HALM CYRIL (1986)}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lcccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+vs. SELESTAT BC&20.1&8&4&0&1&3&0&0&-&4&1&17&41&-24
+\\
+\rowcolor[HTML]{F9F9F9}
+@ GEISPOLSHEIM CJS 2&0.0&0&0&0&0&0&0&0&-&0&0&-&-&-
+\\
+\rowcolor[HTML]{EEEEEE}
+@ SCHILTIGHEIM AU&29.9&9&3&0&3&0&3&8&37.5&4&6&44&47&-3
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. ASC STE AFRE RIE&19.2&8&4&0&0&4&0&0&-&2&4&31&40&-9
+\\
+\rowcolor[HTML]{EEEEEE}
+@ STRASBOURG ST JOSE&30.6&25&10&0&3&7&5&8&62.5&2&0&60&65&-5
+\\
+\rowcolor[HTML]{F9F9F9}
+@ WANTZENAU (LA) ASC&16.1&9&4&1&2&1&0&0&-&5&6&29&36&-7
+\\
+\rowcolor[HTML]{EEEEEE}
+@ BERRWILLER STAFFEL&21.4&8&3&0&1&2&2&6&33.3&2&2&26&49&-23
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. HATTMATT SS&19.3&7&3&0&0&3&1&1&100.0&5&8&27&30&-3
+\\
+\rowcolor[HTML]{EEEEEE}
+@ SELESTAT BC&29.9&10&5&0&3&2&0&0&-&4&7&44&54&-10
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. GEISPOLSHEIM CJS&17.4&7&3&0&1&2&1&2&50.0&4&4&45&32&+13
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{EEEEEE}
+\textbf{Total} & 203.9 & 91 & 39 & 1 & 14 & 24 & 12 & 25 & 48.0 & 32 & 38 & 323 & 394 & -71
+\\
+\rowcolor[HTML]{F9F9F9}
+\textbf{Stats sur 40 min} & 40.0 & 17.9 & 7.7 & 0.2 & 2.7 & 4.7 & 2.4 & 4.9 & 48.0 & 6.3 & 7.5 & 63.4 & 77.3 & -13.9
+\\
+\rowcolor[HTML]{EEEEEE}
+\textbf{Moyenne} & 22.7 & 10.1 & 4.3 & 0.1 & 1.6 & 2.7 & 1.3 & 2.8 & 48.0 & 3.6 & 4.2 & 35.9 & 43.8 & -7.9
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{KAUFFER HUGO (1997)}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lcccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+@ HATTMATT SS&19.3&1&0&0&0&0&1&4&25.0&3&4&38&39&-1
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. SELESTAT BC&14.1&0&0&0&0&0&0&0&-&2&4&20&24&-4
+\\
+\rowcolor[HTML]{EEEEEE}
+@ GEISPOLSHEIM CJS 2&15.1&0&0&0&0&0&0&0&-&0&0&20&24&-4
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. FC MULHOUSE BASK&25.1&9&4&0&1&3&1&4&25.0&2&0&44&35&+9
+\\
+\rowcolor[HTML]{EEEEEE}
+@ SCHILTIGHEIM AU&15.1&2&1&0&0&1&0&0&-&5&6&23&19&+4
+\\
+\rowcolor[HTML]{F9F9F9}
+@ STRASBOURG ST JOSE&18.8&11&4&0&0&4&3&5&60.0&1&2&32&41&-9
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. HOLTZHEIM VOGESI&21.2&4&1&0&1&0&2&4&50.0&4&7&37&34&+3
+\\
+\rowcolor[HTML]{F9F9F9}
+@ WANTZENAU (LA) ASC&21.7&5&2&0&0&2&1&2&50.0&3&4&52&32&+20
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. FC ST LEON EGUIS&12.9&0&0&0&0&0&0&0&-&1&0&15&16&-1
+\\
+\rowcolor[HTML]{F9F9F9}
+@ BERRWILLER STAFFEL&7.7&2&1&0&0&1&0&0&-&3&4&15&16&-1
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. GEISPOLSHEIM CJS&9.5&3&1&1&0&0&0&0&-&1&0&26&27&-1
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+\textbf{Total} & 180.5 & 37 & 14 & 1 & 2 & 11 & 8 & 19 & 42.1 & 25 & 31 & 322 & 307 & +15
+\\
+\rowcolor[HTML]{EEEEEE}
+\textbf{Stats sur 40 min} & 40.0 & 8.2 & 3.1 & 0.2 & 0.4 & 2.4 & 1.8 & 4.2 & 42.1 & 5.5 & 6.9 & 71.3 & 68.0 & +3.3
+\\
+\rowcolor[HTML]{F9F9F9}
+\textbf{Moyenne} & 16.4 & 3.4 & 1.3 & 0.1 & 0.2 & 1.0 & 0.7 & 1.7 & 42.1 & 2.3 & 2.8 & 29.3 & 27.9 & +1.4
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{LUDE DONOVAN (1992)}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lcccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+vs. SELESTAT BC&24.1&9&3&0&0&3&3&5&60.0&4&5&41&39&+2
+\\
+\rowcolor[HTML]{F9F9F9}
+@ GEISPOLSHEIM CJS 2&14.0&6&3&0&0&3&0&2&0.0&3&2&20&31&-11
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. FC MULHOUSE BASK&17.2&13&5&0&0&5&3&4&75.0&2&0&33&23&+10
+\\
+\rowcolor[HTML]{F9F9F9}
+@ SCHILTIGHEIM AU&11.4&3&1&0&1&0&1&2&50.0&2&2&15&22&-7
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{EEEEEE}
+\textbf{Total} & 66.6 & 31 & 12 & 0 & 1 & 11 & 7 & 13 & 53.8 & 11 & 9 & 109 & 115 & -6
+\\
+\rowcolor[HTML]{F9F9F9}
+\textbf{Stats sur 40 min} & 40.0 & 18.6 & 7.2 & 0.0 & 0.6 & 6.6 & 4.2 & 7.8 & 53.8 & 6.6 & 5.4 & 65.4 & 69.0 & -3.6
+\\
+\rowcolor[HTML]{EEEEEE}
+\textbf{Moyenne} & 16.7 & 7.8 & 3.0 & 0.0 & 0.3 & 2.8 & 1.8 & 3.3 & 53.8 & 2.8 & 2.3 & 27.3 & 28.8 & -1.5
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{NETTE BASTIEN (1994)}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lcccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+@ HATTMATT SS&27.5&23&8&2&2&4&5&6&83.3&5&4&47&46&+1
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. SELESTAT BC&28.3&9&2&1&0&1&4&6&66.7&1&2&45&50&-5
+\\
+\rowcolor[HTML]{EEEEEE}
+@ GEISPOLSHEIM CJS 2&29.9&21&8&2&2&4&3&4&75.0&3&4&61&63&-2
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. FC MULHOUSE BASK&27.8&14&5&2&1&2&2&2&100.0&1&2&63&31&+32
+\\
+\rowcolor[HTML]{EEEEEE}
+@ SCHILTIGHEIM AU&33.6&13&4&1&1&2&4&8&50.0&2&4&48&57&-9
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. ASC STE AFRE RIE&30.9&16&5&0&1&4&6&7&85.7&1&2&57&59&-2
+\\
+\rowcolor[HTML]{EEEEEE}
+@ STRASBOURG ST JOSE&31.0&13&5&2&0&3&1&2&50.0&5&6&60&73&-13
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. HOLTZHEIM VOGESI&27.0&13&5&1&2&2&2&3&66.7&4&6&50&50&0
+\\
+\rowcolor[HTML]{EEEEEE}
+@ WANTZENAU (LA) ASC&33.2&20&8&1&1&6&3&3&100.0&2&0&75&59&+16
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. FC ST LEON EGUIS&29.9&15&5&0&1&4&5&7&71.4&4&5&55&45&+10
+\\
+\rowcolor[HTML]{EEEEEE}
+@ BERRWILLER STAFFEL&23.9&10&4&0&0&4&2&6&33.3&5&2&42&40&+2
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. HATTMATT SS&37.3&8&2&0&0&2&4&8&50.0&3&5&53&55&-2
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. GEISPOLSHEIM CJS&31.5&28&12&1&5&6&3&6&50.0&2&2&71&53&+18
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+\textbf{Total} & 391.6 & 203 & 73 & 13 & 16 & 44 & 44 & 68 & 64.7 & 38 & 44 & 727 & 681 & +46
+\\
+\rowcolor[HTML]{EEEEEE}
+\textbf{Stats sur 40 min} & 40.0 & 20.7 & 7.5 & 1.3 & 1.6 & 4.5 & 4.5 & 6.9 & 64.7 & 3.9 & 4.5 & 74.3 & 69.6 & +4.7
+\\
+\rowcolor[HTML]{F9F9F9}
+\textbf{Moyenne} & 30.1 & 15.6 & 5.6 & 1.0 & 1.2 & 3.4 & 3.4 & 5.2 & 64.7 & 2.9 & 3.4 & 55.9 & 52.4 & +3.5
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{ORTLIEB JORDAN (1994)}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lcccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+@ HATTMATT SS&18.6&3&1&1&0&0&0&0&-&3&4&28&37&-9
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. FC MULHOUSE BASK&19.8&5&2&0&0&2&1&2&50.0&2&4&39&26&+13
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. ASC STE AFRE RIE&16.2&3&1&1&0&0&0&0&-&3&4&31&40&-9
+\\
+\rowcolor[HTML]{F9F9F9}
+@ STRASBOURG ST JOSE&21.2&5&2&1&0&1&0&0&-&1&2&38&48&-10
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. HOLTZHEIM VOGESI&16.0&8&3&2&0&1&0&2&0.0&0&0&31&25&+6
+\\
+\rowcolor[HTML]{F9F9F9}
+@ WANTZENAU (LA) ASC&19.4&2&1&0&0&1&0&0&-&0&0&42&40&+2
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. FC ST LEON EGUIS&21.1&7&2&1&1&0&2&2&100.0&1&2&30&28&+2
+\\
+\rowcolor[HTML]{F9F9F9}
+@ BERRWILLER STAFFEL&17.4&0&0&0&0&0&0&0&-&2&2&19&38&-19
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. HATTMATT SS&14.6&0&0&0&0&0&0&0&-&2&2&19&22&-3
+\\
+\rowcolor[HTML]{F9F9F9}
+@ SELESTAT BC&16.0&0&0&0&0&0&0&0&-&3&4&24&16&+8
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. GEISPOLSHEIM CJS&13.7&5&1&1&0&0&2&2&100.0&0&0&30&28&+2
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+\textbf{Total} & 193.9 & 38 & 13 & 7 & 1 & 5 & 5 & 8 & 62.5 & 17 & 24 & 331 & 348 & -17
+\\
+\rowcolor[HTML]{EEEEEE}
+\textbf{Stats sur 40 min} & 40.0 & 7.8 & 2.7 & 1.4 & 0.2 & 1.0 & 1.0 & 1.7 & 62.5 & 3.5 & 5.0 & 68.3 & 71.8 & -3.5
+\\
+\rowcolor[HTML]{F9F9F9}
+\textbf{Moyenne} & 17.6 & 3.5 & 1.2 & 0.6 & 0.1 & 0.5 & 0.5 & 0.7 & 62.5 & 1.5 & 2.2 & 30.1 & 31.6 & -1.5
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{RENGER MAXIME (1988)}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lcccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+@ SELESTAT BC&17.9&4&2&0&0&2&0&0&-&3&4&18&21&-3
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+\textbf{Total} & 17.9 & 4 & 2 & 0 & 0 & 2 & 0 & 0 & - & 3 & 4 & 18 & 21 & -3
+\\
+\rowcolor[HTML]{EEEEEE}
+\textbf{Stats sur 40 min} & 40.0 & 8.9 & 4.5 & 0.0 & 0.0 & 4.5 & 0.0 & 0.0 & - & 6.7 & 8.9 & 40.1 & 46.8 & -6.7
+\\
+\rowcolor[HTML]{F9F9F9}
+\textbf{Moyenne} & 17.9 & 4.0 & 2.0 & 0.0 & 0.0 & 2.0 & 0.0 & 0.0 & - & 3.0 & 4.0 & 18.0 & 21.0 & -3.0
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{RUDLER GAUVAIN (1992)}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lcccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+vs. ASC STE AFRE RIE&20.5&6&2&0&0&2&2&4&50.0&2&2&31&50&-19
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+\textbf{Total} & 20.5 & 6 & 2 & 0 & 0 & 2 & 2 & 4 & 50.0 & 2 & 2 & 31 & 50 & -19
+\\
+\rowcolor[HTML]{EEEEEE}
+\textbf{Stats sur 40 min} & 40.0 & 11.7 & 3.9 & 0.0 & 0.0 & 3.9 & 3.9 & 7.8 & 50.0 & 3.9 & 3.9 & 60.5 & 97.6 & -37.1
+\\
+\rowcolor[HTML]{F9F9F9}
+\textbf{Moyenne} & 20.5 & 6.0 & 2.0 & 0.0 & 0.0 & 2.0 & 2.0 & 4.0 & 50.0 & 2.0 & 2.0 & 31.0 & 50.0 & -19.0
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{WALCH FRANCK (1988)}
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lcccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+                          & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+@ HATTMATT SS&18.4&4&2&0&0&2&0&0&-&1&0&24&37&-13
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. SELESTAT BC&13.5&3&1&0&0&1&1&2&50.0&2&0&9&26&-17
+\\
+\rowcolor[HTML]{EEEEEE}
+@ GEISPOLSHEIM CJS 2&10.2&0&0&0&0&0&0&0&-&1&2&13&24&-11
+\\
+\rowcolor[HTML]{F9F9F9}
+@ SCHILTIGHEIM AU&16.9&4&1&0&0&1&2&2&100.0&3&2&21&29&-8
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. ASC STE AFRE RIE&15.6&16&6&2&2&2&2&2&100.0&1&0&32&40&-8
+\\
+\rowcolor[HTML]{F9F9F9}
+vs. HOLTZHEIM VOGESI&9.3&6&2&2&0&0&0&0&-&4&2&24&16&+8
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. FC ST LEON EGUIS&9.4&4&2&0&0&2&0&0&-&1&0&17&15&+2
+\\
+\rowcolor[HTML]{F9F9F9}
+@ BERRWILLER STAFFEL&23.2&10&5&0&1&4&0&0&-&3&2&36&29&+7
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. HATTMATT SS&11.0&12&5&2&2&1&0&0&-&2&0&16&20&-4
+\\
+\rowcolor[HTML]{F9F9F9}
+@ SELESTAT BC&8.0&0&0&0&0&0&0&0&-&1&0&5&7&-2
+\\
+\rowcolor[HTML]{EEEEEE}
+vs. GEISPOLSHEIM CJS&13.2&4&2&0&1&1&0&1&0.0&5&9&29&35&-6
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+\textbf{Total} & 148.8 & 63 & 26 & 6 & 6 & 14 & 5 & 7 & 71.4 & 24 & 17 & 226 & 278 & -52
+\\
+\rowcolor[HTML]{EEEEEE}
+\textbf{Stats sur 40 min} & 40.0 & 16.9 & 7.0 & 1.6 & 1.6 & 3.8 & 1.3 & 1.9 & 71.4 & 6.5 & 4.6 & 60.8 & 74.7 & -14.0
+\\
+\rowcolor[HTML]{F9F9F9}
+\textbf{Moyenne} & 13.5 & 5.7 & 2.4 & 0.5 & 0.5 & 1.3 & 0.5 & 0.6 & 71.4 & 2.2 & 1.5 & 20.5 & 25.3 & -4.7
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\thispagestyle{empty}
+\begin{center}
+\vspace*{\fill}
+\includegraphics[width=0.6\textwidth]{logo_BS_ecrit_noir} \\
+\vspace{120pt}
+\Huge\bfseries Statistiques  \\
+\vspace{30pt} \Huge\bfseries Par match  \\
+\vspace{90pt} \vspace*{\fill} \end{center}
+\newpage
+\begin{center}
+\section*{@. HATTMATT SS}
+\section*{Défaite 65 - 68}
+\large
+\textbf{ABC LUTTERBACH}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+3 & NETTE BASTIEN *&27:29&23&8&2&2&4&5&19&26.3&5&4&47&46&+1
+\\
+\rowcolor[HTML]{F9F9F9}
+5 & FREDJ SALEM *&19:44&6&3&0&1&2&0&14&0.0&5&8&35&24&+11
+\\
+\rowcolor[HTML]{EEEEEE}
+6 & GERBER QUENTIN *&25:45&12&3&1&0&2&5&19&26.3&5&2&45&36&+9
+\\
+\rowcolor[HTML]{F9F9F9}
+7 & KAUFFER HUGO&19:20&1&0&0&0&0&1&15&6.7&3&4&38&39&-1
+\\
+\rowcolor[HTML]{EEEEEE}
+8 & WALCH FRANCK&18:26&4&2&0&0&2&0&14&0.0&1&0&24&37&-13
+\\
+\rowcolor[HTML]{F9F9F9}
+9 & BOUHASSANE SOFIANE *&26:57&7&3&1&0&2&0&14&0.0&2&4&39&42&-3
+\\
+\rowcolor[HTML]{EEEEEE}
+11 & DA COSTA ADRIEN *&26:12&5&1&0&0&1&3&17&17.6&2&2&39&39&0
+\\
+\rowcolor[HTML]{F9F9F9}
+12 & ORTLIEB JORDAN&18:37&3&1&1&0&0&0&14&0.0&3&4&28&37&-9
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{EEEEEE}
+ & Equipe &  &65&22&5&3&14&16&30&53.3&28&32&65&68&-10
+\\
+\hline
+\end{tabular}}
+\end{table}
+\begin{center}
+\large
+\textbf{HATTMATT SS}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+4 & SCHUTZ GAUTHIER *&22:22&8&2&0&0&2&4&19&21.1&2&2&31&38&-7
+\\
+\rowcolor[HTML]{F9F9F9}
+5 & EBERLIN LUDOVIC *&28:10&5&1&1&0&0&2&17&11.8&1&2&47&40&+7
+\\
+\rowcolor[HTML]{EEEEEE}
+6 & LAMBERT GUILLAUME&15:46&1&0&0&0&0&1&16&6.3&2&2&24&27&-3
+\\
+\rowcolor[HTML]{F9F9F9}
+7 & LIENHERR JORIS&31:20&35&11&5&1&5&8&23&34.8&2&2&58&53&+5
+\\
+\rowcolor[HTML]{EEEEEE}
+8 & DAEHN VINCENT&11:28&3&1&1&0&0&0&15&0.0&3&5&24&24&0
+\\
+\rowcolor[HTML]{F9F9F9}
+9 & HELMSTETTER MAXIME *&23:59&4&2&0&0&2&0&15&0.0&1&2&40&41&-1
+\\
+\rowcolor[HTML]{EEEEEE}
+10 & ERNST JULIEN&15:47&4&2&0&1&1&0&15&0.0&0&0&28&24&+4
+\\
+\rowcolor[HTML]{F9F9F9}
+11 & ADOLFF KEVIN *&21:21&1&0&0&0&0&1&16&6.3&1&2&28&34&-6
+\\
+\rowcolor[HTML]{EEEEEE}
+12 & FECHTER LOUIS&18:38&4&2&0&0&2&0&15&0.0&5&9&40&31&+9
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &68&22&7&2&13&17&32&53.1&20&30&68&65&+7
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{vs. SELESTAT BC}
+\section*{Défaite 57 - 70}
+\large
+\textbf{ABC LUTTERBACH}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+4 & ALBRECHT SERGE *&21:02&0&0&0&0&0&0&10&0.0&0&0&39&36&+3
+\\
+\rowcolor[HTML]{F9F9F9}
+5 & FREDJ SALEM *&24:43&14&6&1&1&4&1&11&9.1&1&2&42&39&+3
+\\
+\rowcolor[HTML]{EEEEEE}
+6 & GERBER QUENTIN *&28:21&12&1&0&0&1&10&20&50.0&4&6&48&48&0
+\\
+\rowcolor[HTML]{F9F9F9}
+7 & KAUFFER HUGO&14:08&0&0&0&0&0&0&10&0.0&2&4&20&24&-4
+\\
+\rowcolor[HTML]{EEEEEE}
+8 & WALCH FRANCK&13:32&3&1&0&0&1&1&11&9.1&2&0&9&26&-17
+\\
+\rowcolor[HTML]{F9F9F9}
+9 & BOUHASSANE SOFIANE&11:44&0&0&0&0&0&0&10&0.0&2&0&8&22&-14
+\\
+\rowcolor[HTML]{EEEEEE}
+10 & LUDE DONOVAN *&24:04&9&3&0&0&3&3&13&23.1&4&5&41&39&+2
+\\
+\rowcolor[HTML]{F9F9F9}
+11 & DA COSTA ADRIEN&14:00&2&1&0&0&1&0&10&0.0&2&0&20&25&-5
+\\
+\rowcolor[HTML]{EEEEEE}
+12 & HALM CYRIL&20:04&8&4&0&1&3&0&10&0.0&4&1&17&41&-24
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &57&18&2&2&14&19&29&65.5&22&20&57&70&-5
+\\
+\hline
+\end{tabular}}
+\end{table}
+\begin{center}
+\large
+\textbf{SELESTAT BC}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+6 & KRETZ ANTOINE&12:28&3&1&1&0&0&0&9&0.0&1&0&20&14&+6
+\\
+\rowcolor[HTML]{F9F9F9}
+8 & MANSOUR MOHAMED *&24:54&3&1&1&0&0&0&9&0.0&0&0&44&39&+5
+\\
+\rowcolor[HTML]{EEEEEE}
+9 & OZALAKUS ILHAN&15:53&6&3&0&0&3&0&9&0.0&1&2&25&27&-2
+\\
+\rowcolor[HTML]{F9F9F9}
+11 & CHAUVIN LUDOVIC *&27:48&17&7&2&0&5&1&10&10.0&1&2&53&39&+14
+\\
+\rowcolor[HTML]{EEEEEE}
+12 & MAURER SYLVAIN&10:33&3&1&0&0&1&1&10&10.0&4&7&18&13&+5
+\\
+\rowcolor[HTML]{F9F9F9}
+13 & DROUET ELOI&27:46&12&5&0&1&4&2&11&18.2&1&0&53&31&+22
+\\
+\rowcolor[HTML]{EEEEEE}
+14 & KRETZ VICTOR *&22:50&9&4&1&0&3&0&9&0.0&2&2&42&36&+6
+\\
+\rowcolor[HTML]{F9F9F9}
+15 & POISSON THOMAS&16:05&2&0&0&0&0&2&11&18.2&0&0&26&16&+10
+\\
+\rowcolor[HTML]{EEEEEE}
+17 & LEBURGUE CHARLES *&22:17&13&4&0&0&4&5&14&35.7&4&7&38&36&+2
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &70&27&5&1&21&11&20&55.0&19&29&70&57&-3
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{@. GEISPOLSHEIM CJS 2}
+\section*{Défaite 74 - 85}
+\large
+\textbf{ABC LUTTERBACH}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+4 & ALBRECHT SERGE&19:18&1&0&0&0&0&1&13&7.7&2&2&41&45&-4
+\\
+\rowcolor[HTML]{F9F9F9}
+5 & FREDJ SALEM *&25:42&16&7&0&1&6&2&14&14.3&2&2&53&62&-9
+\\
+\rowcolor[HTML]{EEEEEE}
+6 & GERBER QUENTIN *&35:54&20&6&0&0&6&8&20&40.0&3&4&74&73&+1
+\\
+\rowcolor[HTML]{F9F9F9}
+7 & KAUFFER HUGO&15:03&0&0&0&0&0&0&12&0.0&0&0&20&24&-4
+\\
+\rowcolor[HTML]{EEEEEE}
+8 & WALCH FRANCK&10:12&0&0&0&0&0&0&12&0.0&1&2&13&24&-11
+\\
+\rowcolor[HTML]{F9F9F9}
+9 & BOUHASSANE SOFIANE *&23:19&5&2&1&0&1&0&12&0.0&1&0&38&42&-4
+\\
+\rowcolor[HTML]{EEEEEE}
+10 & LUDE DONOVAN *&14:02&6&3&0&0&3&0&12&0.0&3&2&20&31&-11
+\\
+\rowcolor[HTML]{F9F9F9}
+11 & DA COSTA ADRIEN&26:28&5&0&0&0&0&5&17&29.4&2&2&50&59&-9
+\\
+\rowcolor[HTML]{EEEEEE}
+12 & HALM CYRIL&0:00&0&0&0&0&0&0&12&0.0&0&0&-&-&-
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &74&26&3&3&20&19&31&61.3&18&17&74&85&-2
+\\
+\hline
+\end{tabular}}
+\end{table}
+\begin{center}
+\large
+\textbf{GEISPOLSHEIM CJS 2}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+4 & LUX ARTHAUD&21:36&0&0&0&0&0&0&2&0.0&0&0&32&40&-8
+\\
+\rowcolor[HTML]{F9F9F9}
+5 & ULMER MATS&19:55&4&2&0&0&2&0&2&0.0&4&6&32&43&-11
+\\
+\rowcolor[HTML]{EEEEEE}
+7 & HEITZ ETIENNE *&14:03&8&2&1&0&1&3&5&60.0&4&8&44&25&+19
+\\
+\rowcolor[HTML]{F9F9F9}
+8 & VOLZ FLORIAN *&26:04&15&5&1&2&2&4&6&66.7&2&0&62&52&+10
+\\
+\rowcolor[HTML]{EEEEEE}
+9 & WEINLING ANTOINE *&30:45&23&8&5&1&2&2&4&50.0&5&8&65&65&0
+\\
+\rowcolor[HTML]{F9F9F9}
+10 & GAUBERT KEVIN *&31:21&10&4&0&1&3&2&4&50.0&1&0&74&56&+18
+\\
+\rowcolor[HTML]{EEEEEE}
+14 & BESSALA NGOMA PATRI*&20:04&0&0&0&0&0&0&2&0.0&3&2&53&31&+22
+\\
+\rowcolor[HTML]{F9F9F9}
+15 & SCHNEIDER PASCAL&14:04&0&0&0&0&0&0&2&0.0&1&2&23&18&+5
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{EEEEEE}
+ & Equipe &  &85&29&12&5&12&15&17&88.2&23&31&85&74&+2
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{vs. FC MULHOUSE BASKET 2}
+\section*{Victoire 85 - 45}
+
+\large
+\textbf{ABC LUTTERBACH}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+3 & NETTE BASTIEN *&27:45&14&5&2&1&2&2&12&16.7&1&2&63&31&+32
+\\
+\rowcolor[HTML]{F9F9F9}
+4 & ALBRECHT SERGE *&4:05&0&0&0&0&0&0&10&0.0&0&0&13&0&+13
+\\
+\rowcolor[HTML]{EEEEEE}
+5 & FREDJ SALEM *&22:39&13&5&1&1&3&2&12&16.7&2&3&54&22&+32
+\\
+\rowcolor[HTML]{F9F9F9}
+6 & GERBER QUENTIN *&28:23&15&5&4&0&1&1&11&9.1&0&0&65&31&+34
+\\
+\rowcolor[HTML]{EEEEEE}
+7 & KAUFFER HUGO&25:04&9&4&0&1&3&1&11&9.1&2&0&44&35&+9
+\\
+\rowcolor[HTML]{F9F9F9}
+8 & FISCHER BAPTISTE&13:40&10&5&0&0&5&0&10&0.0&1&2&25&11&+14
+\\
+\rowcolor[HTML]{EEEEEE}
+9 & BOUHASSANE SOFIANE&21:51&4&2&0&1&1&0&10&0.0&2&2&44&30&+14
+\\
+\rowcolor[HTML]{F9F9F9}
+10 & LUDE DONOVAN&17:10&13&5&0&0&5&3&13&23.1&2&0&33&23&+10
+\\
+\rowcolor[HTML]{EEEEEE}
+11 & DA COSTA ADRIEN *&19:33&2&1&0&0&1&0&10&0.0&0&0&47&16&+31
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &85&34&7&4&23&10&20&50.0&12&13&85&45&+13
+\\
+\hline
+\end{tabular}}
+\end{table}
+\begin{center}
+\large
+\textbf{FC MULHOUSE BASKET 2}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+4 & SCHOLASTIQUE NORTON*&29:12&5&2&1&1&0&0&7&0.0&1&2&32&65&-33
+\\
+\rowcolor[HTML]{F9F9F9}
+5 & CAVKUSIC ALIJA *&24:16&4&0&0&0&0&4&11&36.4&2&2&26&55&-29
+\\
+\rowcolor[HTML]{EEEEEE}
+6 & GOGIC IVAN *&14:54&1&0&0&0&0&1&8&12.5&1&2&14&31&-17
+\\
+\rowcolor[HTML]{F9F9F9}
+8 & RAINERI WILLY&10:47&2&1&0&1&0&0&7&0.0&2&4&13&20&-7
+\\
+\rowcolor[HTML]{EEEEEE}
+10 & THIARE NDIOGOU MARV*&20:54&3&1&0&0&1&1&8&12.5&2&0&21&46&-25
+\\
+\rowcolor[HTML]{F9F9F9}
+11 & JACQUEY QUENTIN&25:05&7&3&1&0&2&0&7&0.0&3&4&31&54&-23
+\\
+\rowcolor[HTML]{EEEEEE}
+12 & BOUTAYA SMAIL&27:57&14&7&0&2&5&0&7&0.0&2&2&38&55&-17
+\\
+\rowcolor[HTML]{F9F9F9}
+13 & MONTABORD JEAN MICH*&18:22&0&0&0&0&0&0&7&0.0&1&2&14&33&-19
+\\
+\rowcolor[HTML]{EEEEEE}
+14 & MARINKOVIC STEFAN&28:28&9&4&1&0&3&0&7&0.0&0&0&36&66&-30
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &45&18&3&4&11&6&13&46.2&14&20&45&85&-
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{@. SCHILTIGHEIM AU}
+\section*{Défaite 59 - 68}
+\large
+\textbf{ABC LUTTERBACH}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+3 & NETTE BASTIEN *&33:36&13&4&1&1&2&4&20&20.0&2&4&48&57&-9
+\\
+\rowcolor[HTML]{F9F9F9}
+4 & ALBRECHT SERGE&18:02&4&2&0&2&0&0&16&0.0&1&0&25&29&-4
+\\
+\rowcolor[HTML]{EEEEEE}
+5 & FREDJ SALEM *&21:32&7&2&2&0&0&1&17&5.9&3&4&38&38&0
+\\
+\rowcolor[HTML]{F9F9F9}
+6 & GERBER QUENTIN *&14:21&10&3&1&1&1&3&19&15.8&5&6&24&27&-3
+\\
+\rowcolor[HTML]{EEEEEE}
+7 & KAUFFER HUGO&15:08&2&1&0&0&1&0&16&0.0&5&6&23&19&+4
+\\
+\rowcolor[HTML]{F9F9F9}
+8 & WALCH FRANCK&16:54&4&1&0&0&1&2&18&11.1&3&2&21&29&-8
+\\
+\rowcolor[HTML]{EEEEEE}
+9 & BOUHASSANE SOFIANE *&21:00&0&0&0&0&0&0&16&0.0&1&2&33&44&-11
+\\
+\rowcolor[HTML]{F9F9F9}
+10 & LUDE DONOVAN&11:22&3&1&0&1&0&1&17&5.9&2&2&15&22&-7
+\\
+\rowcolor[HTML]{EEEEEE}
+11 & DA COSTA ADRIEN&18:03&7&2&1&0&1&2&18&11.1&2&3&24&28&-4
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &59&19&5&8&6&16&32&50.0&29&36&59&68&-3
+\\
+\hline
+\end{tabular}}
+\end{table}
+\begin{center}
+\large
+\textbf{SCHILTIGHEIM AU}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+4 & JALTA KEVIN *&32:14&3&1&0&0&1&1&17&5.9&4&2&54&53&+1
+\\
+\rowcolor[HTML]{F9F9F9}
+5 & RENAUD ETIENNE *&32:30&21&7&2&3&2&5&21&23.8&3&2&59&49&+10
+\\
+\rowcolor[HTML]{EEEEEE}
+6 & HOFF BRICE&15:15&3&1&1&0&0&0&16&0.0&1&2&25&17&+8
+\\
+\rowcolor[HTML]{F9F9F9}
+7 & KOSTMANN MAXIME&0:00&0&0&0&0&0&0&16&0.0&0&0&-&-&-
+\\
+\rowcolor[HTML]{EEEEEE}
+8 & FORGUES KEVIN *&29:10&8&2&0&0&2&4&20&20.0&3&2&52&39&+13
+\\
+\rowcolor[HTML]{F9F9F9}
+9 & VANDEWALLE CORENTIN*&14:59&5&1&0&0&1&3&19&15.8&5&7&22&19&+3
+\\
+\rowcolor[HTML]{EEEEEE}
+10 & DARIFI ILIAS&26:13&12&4&2&0&2&2&18&11.1&2&4&50&37&+13
+\\
+\rowcolor[HTML]{F9F9F9}
+11 & TSANGA TABI YONI *&29:23&11&4&1&0&3&2&18&11.1&1&2&41&47&-6
+\\
+\rowcolor[HTML]{EEEEEE}
+12 & BROUSMICHE STEPHANE&8:55&4&1&0&1&0&2&18&11.1&2&2&12&12&0
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &68&21&6&4&11&20&36&55.6&26&32&68&59&+5
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{vs. ASC STE AFRE RIEDISHEIM}
+\section*{Défaite 70 - 86}
+\large
+\textbf{ABC LUTTERBACH}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+3 & NETTE BASTIEN *&30:51&16&5&0&1&4&6&10&60.0&1&2&57&59&-2
+\\
+\rowcolor[HTML]{F9F9F9}
+4 & ALBRECHT SERGE&22:20&0&0&0&0&0&0&4&0.0&1&0&40&41&-1
+\\
+\rowcolor[HTML]{EEEEEE}
+5 & FREDJ SALEM *&17:41&10&5&0&1&4&0&4&0.0&3&1&34&33&+1
+\\
+\rowcolor[HTML]{F9F9F9}
+6 & GERBER QUENTIN *&21:31&8&2&2&0&0&2&6&33.3&5&6&32&45&-13
+\\
+\rowcolor[HTML]{EEEEEE}
+7 & RUDLER GAUVAIN&20:29&6&2&0&0&2&2&6&33.3&2&2&31&50&-19
+\\
+\rowcolor[HTML]{F9F9F9}
+8 & WALCH FRANCK&15:34&16&6&2&2&2&2&6&33.3&1&0&32&40&-8
+\\
+\rowcolor[HTML]{EEEEEE}
+9 & BOUHASSANE SOFIANE *&20:00&2&0&0&0&0&2&6&33.3&5&6&36&48&-12
+\\
+\rowcolor[HTML]{F9F9F9}
+10 & HALM CYRIL&19:10&8&4&0&0&4&0&4&0.0&2&4&31&40&-9
+\\
+\rowcolor[HTML]{EEEEEE}
+11 & DA COSTA ADRIEN *&15:46&1&0&0&0&0&1&5&20.0&2&0&28&31&-3
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &70&25&5&4&16&15&19&78.9&25&25&70&86&-9
+\\
+\hline
+\end{tabular}}
+\end{table}
+\begin{center}
+\large
+\textbf{ASC STE AFRE RIEDISHEIM}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+4 & BADER ARNAUD&0:21&0&0&0&0&0&0&8&0.0&0&0&0&0&0
+\\
+\rowcolor[HTML]{F9F9F9}
+5 & DEL MONTE ALEJANDRO&19:11&2&1&0&0&1&0&8&0.0&4&3&45&32&+13
+\\
+\rowcolor[HTML]{EEEEEE}
+7 & MOSSER NICOLAS *&23:41&6&2&2&0&0&0&8&0.0&0&0&54&43&+11
+\\
+\rowcolor[HTML]{F9F9F9}
+8 & OSTERMANN TIM&15:52&7&2&2&0&0&1&9&11.1&2&2&43&27&+16
+\\
+\rowcolor[HTML]{EEEEEE}
+9 & HALBWACHS ARNAUD&20:57&8&3&1&1&1&1&9&11.1&3&2&40&35&+5
+\\
+\rowcolor[HTML]{F9F9F9}
+11 & BINNERT JULES&17:44&9&3&0&1&2&3&11&27.3&1&2&38&33&+5
+\\
+\rowcolor[HTML]{EEEEEE}
+12 & BANGEL AURELIEN *&20:48&4&2&0&1&1&0&8&0.0&1&2&41&38&+3
+\\
+\rowcolor[HTML]{F9F9F9}
+13 & MUTZ THOMAS *&33:00&21&6&2&1&3&7&15&46.7&2&4&72&58&+14
+\\
+\rowcolor[HTML]{EEEEEE}
+14 & SCHLAEFLIN TRISTAN *&18:31&18&6&5&0&1&1&9&11.1&3&2&36&32&+4
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &86&28&13&4&11&17&25&68.0&18&19&86&70&+9
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{@. STRASBOURG ST JOSEPH 2}
+\section*{Défaite 77 - 89}
+\large
+\textbf{ABC LUTTERBACH}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+4 & ALBRECHT SERGE *&23:59&4&1&1&0&0&1&10&10.0&2&2&52&56&-4
+\\
+\rowcolor[HTML]{F9F9F9}
+5 & FREDJ SALEM *&16:32&4&2&0&0&2&0&9&0.0&2&3&29&38&-9
+\\
+\rowcolor[HTML]{EEEEEE}
+6 & KAUFFER HUGO&18:50&11&4&0&0&4&3&12&25.0&1&2&32&41&-9
+\\
+\rowcolor[HTML]{F9F9F9}
+7 & GERBER QUENTIN *&33:55&6&1&1&0&0&3&12&25.0&2&0&70&71&-1
+\\
+\rowcolor[HTML]{EEEEEE}
+8 & ORTLIEB JORDAN&21:14&5&2&1&0&1&0&9&0.0&1&2&38&48&-10
+\\
+\rowcolor[HTML]{F9F9F9}
+9 & NETTE BASTIEN *&31:00&13&5&2&0&3&1&10&10.0&5&6&60&73&-13
+\\
+\rowcolor[HTML]{EEEEEE}
+11 & DA COSTA ADRIEN&23:32&9&4&0&0&4&1&10&10.0&1&2&44&53&-9
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &77&29&5&3&21&14&23&60.9&16&18&77&89&-5
+\\
+\hline
+\end{tabular}}
+\end{table}
+\begin{center}
+\large
+\textbf{STRASBOURG ST JOSEPH 2}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+0 & COME JULIEN&28:03&20&7&4&1&2&2&10&20.0&3&2&61&57&+4
+\\
+\rowcolor[HTML]{F9F9F9}
+1 & GEROMEGNACE JORDAN *&20:32&6&2&1&0&1&1&9&11.1&2&2&49&46&+3
+\\
+\rowcolor[HTML]{EEEEEE}
+3 & BOUSQUET ALEXANDRE&23:40&17&6&4&0&2&1&9&11.1&1&2&57&46&+11
+\\
+\rowcolor[HTML]{F9F9F9}
+8 & JAAFARI ABDELAZIZ *&21:54&7&3&1&0&2&0&8&0.0&4&4&51&46&+5
+\\
+\rowcolor[HTML]{EEEEEE}
+13 & ROUBEAU JONATHAN&0:00&0&0&0&0&0&0&8&0.0&0&0&-&-&-
+\\
+\rowcolor[HTML]{F9F9F9}
+31 & DEBES MATHIEU *&33:17&21&9&0&0&9&3&11&27.3&2&2&84&54&+30
+\\
+\rowcolor[HTML]{EEEEEE}
+41 & SINGLETON ALEXANDRE*&19:21&2&1&0&0&1&0&8&0.0&1&0&32&41&-9
+\\
+\rowcolor[HTML]{F9F9F9}
+91 & DIAKO DIOUKOU&26:03&4&2&0&0&2&0&8&0.0&2&4&53&41&+12
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{EEEEEE}
+ & Equipe &  &89&34&11&1&22&10&18&55.6&18&23&89&77&+4
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{vs. HOLTZHEIM VOGESIA 2}
+\section*{Victoire 74 - 62}
+
+\large
+\textbf{ABC LUTTERBACH}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+3 & NETTE BASTIEN *&27:01&13&5&1&2&2&2&14&14.3&4&6&50&50&0
+\\
+\rowcolor[HTML]{F9F9F9}
+4 & ALBRECHT SERGE *&15:18&5&1&1&0&0&2&14&14.3&5&5&36&20&+16
+\\
+\rowcolor[HTML]{EEEEEE}
+5 & FREDJ SALEM *&20:53&14&6&0&3&3&2&14&14.3&4&6&36&31&+5
+\\
+\rowcolor[HTML]{F9F9F9}
+6 & GERBER QUENTIN *&34:09&17&6&0&3&3&5&17&29.4&3&6&68&45&+23
+\\
+\rowcolor[HTML]{EEEEEE}
+7 & KAUFFER HUGO&21:10&4&1&0&1&0&2&14&14.3&4&7&37&34&+3
+\\
+\rowcolor[HTML]{F9F9F9}
+8 & WALCH FRANCK&9:16&6&2&2&0&0&0&12&0.0&4&2&24&16&+8
+\\
+\rowcolor[HTML]{EEEEEE}
+9 & BOUHASSANE SOFIANE&20:57&0&0&0&0&0&0&12&0.0&0&0&31&45&-14
+\\
+\rowcolor[HTML]{F9F9F9}
+10 & ORTLIEB JORDAN&16:02&8&3&2&0&1&0&12&0.0&0&0&31&25&+6
+\\
+\rowcolor[HTML]{EEEEEE}
+11 & DA COSTA ADRIEN *&20:01&2&1&0&1&0&0&12&0.0&4&7&35&26&+9
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &74&27&6&10&11&14&26&53.8&33&42&74&62&0
+\\
+\hline
+\end{tabular}}
+\end{table}
+\begin{center}
+\large
+\textbf{HOLTZHEIM VOGESIA 2}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+4 & FRANCK LUDOVIC&25:42&2&0&0&0&0&2&26&7.7&2&1&48&50&-2
+\\
+\rowcolor[HTML]{F9F9F9}
+5 & LEPRETRE MARJOLIN&23:00&9&3&1&1&1&2&26&7.7&3&2&42&47&-5
+\\
+\rowcolor[HTML]{EEEEEE}
+7 & GARDES CORENTIN *&18:05&2&0&0&0&0&2&26&7.7&3&4&23&29&-6
+\\
+\rowcolor[HTML]{F9F9F9}
+9 & VIRAG LIONEL *&22:09&8&2&0&0&2&4&28&14.3&3&1&35&35&0
+\\
+\rowcolor[HTML]{EEEEEE}
+10 & MAYETELA HENRIET *&32:38&11&3&0&2&1&5&29&17.2&4&6&45&66&-21
+\\
+\rowcolor[HTML]{F9F9F9}
+12 & TROUSSEY PIERRE-LOU&11:59&0&0&0&0&0&0&24&0.0&5&7&19&22&-3
+\\
+\rowcolor[HTML]{EEEEEE}
+13 & CHARFI OMAR&25:25&19&7&5&0&2&0&24&0.0&1&0&44&44&0
+\\
+\rowcolor[HTML]{F9F9F9}
+14 & MULLER RENALD *&13:12&5&2&0&1&1&1&25&4.0&1&2&15&28&-13
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{EEEEEE}
+ & Equipe &  &62&19&6&5&8&18&42&42.9&24&26&62&74&-8
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{@. WANTZENAU (LA) ASCSP}
+\section*{Victoire 91 - 74}
+
+\large
+\textbf{ABC LUTTERBACH}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+3 & NETTE BASTIEN *&33:11&20&8&1&1&6&3&10&30.0&2&0&75&59&+16
+\\
+\rowcolor[HTML]{F9F9F9}
+4 & ALBRECHT SERGE *&18:51&4&1&0&0&1&2&9&22.2&4&4&39&42&-3
+\\
+\rowcolor[HTML]{EEEEEE}
+5 & FREDJ SALEM *&21:58&7&3&0&0&3&1&8&12.5&2&4&43&44&-1
+\\
+\rowcolor[HTML]{F9F9F9}
+6 & GERBER QUENTIN *&32:02&24&7&1&0&6&9&16&56.3&3&2&80&55&+25
+\\
+\rowcolor[HTML]{EEEEEE}
+7 & KAUFFER HUGO&21:42&5&2&0&0&2&1&8&12.5&3&4&52&32&+20
+\\
+\rowcolor[HTML]{F9F9F9}
+9 & BOUHASSANE SOFIANE&18:01&7&3&1&2&0&0&7&0.0&3&0&48&30&+18
+\\
+\rowcolor[HTML]{EEEEEE}
+11 & DA COSTA ADRIEN *&18:43&13&5&1&0&4&2&9&22.2&2&3&47&32&+15
+\\
+\rowcolor[HTML]{F9F9F9}
+12 & HALM CYRIL&16:07&9&4&1&2&1&0&7&0.0&5&6&29&36&-7
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{EEEEEE}
+ & Equipe &  &91&34&5&5&24&18&25&72.0&25&24&91&74&+2
+\\
+\hline
+\end{tabular}}
+\end{table}
+\begin{center}
+\large
+\textbf{WANTZENAU LA ASCSP}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+4 & GUERY VALENTIN&8:30&2&1&0&0&1&0&7&0.0&4&5&23&24&-1
+\\
+\rowcolor[HTML]{F9F9F9}
+5 & WEISSEND MARC *&25:17&12&5&2&0&3&0&7&0.0&1&2&43&50&-7
+\\
+\rowcolor[HTML]{EEEEEE}
+6 & HOLOIA ALEXANDRE *&30:36&8&3&0&0&3&2&9&22.2&3&6&50&69&-19
+\\
+\rowcolor[HTML]{F9F9F9}
+7 & JAMBOIS MAXIME *&25:34&8&3&2&0&1&0&7&0.0&1&2&42&60&-18
+\\
+\rowcolor[HTML]{EEEEEE}
+8 & CHARLEMAGNE THIBAUT&14:12&2&1&0&0&1&0&7&0.0&1&2&29&33&-4
+\\
+\rowcolor[HTML]{F9F9F9}
+9 & HAAS FRANCOIS *&35:25&10&3&2&0&1&2&9&22.2&2&1&64&79&-15
+\\
+\rowcolor[HTML]{EEEEEE}
+10 & JUND JULIEN&0:00&0&0&0&0&0&0&7&0.0&0&0&-&-&-
+\\
+\rowcolor[HTML]{F9F9F9}
+11 & VILLEMIN MICHEL *&23:29&10&3&1&1&1&3&10&30.0&1&1&47&57&-10
+\\
+\rowcolor[HTML]{EEEEEE}
+15 & BENABID YANN&31:28&20&6&0&1&5&8&15&53.3&4&6&62&73&-11
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &74&25&7&2&16&17&24&70.8&17&25&74&91&+1
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{vs. FC ST LEON EGUISHEIM}
+\section*{Victoire 63 - 55}
+
+\large
+\textbf{ABC LUTTERBACH}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+4 & ALBRECHT SERGE&22:24&0&0&0&0&0&0&15&0.0&2&0&38&29&+9
+\\
+\rowcolor[HTML]{F9F9F9}
+5 & FREDJ SALEM *&18:34&10&4&1&0&3&1&16&6.3&2&3&25&25&0
+\\
+\rowcolor[HTML]{EEEEEE}
+6 & GERBER QUENTIN *&29:48&9&2&2&0&0&3&18&16.7&3&2&47&38&+9
+\\
+\rowcolor[HTML]{F9F9F9}
+7 & KAUFFER HUGO&12:55&0&0&0&0&0&0&15&0.0&1&0&15&16&-1
+\\
+\rowcolor[HTML]{EEEEEE}
+8 & WALCH FRANCK&9:26&4&2&0&0&2&0&15&0.0&1&0&17&15&+2
+\\
+\rowcolor[HTML]{F9F9F9}
+9 & BOUHASSANE SOFIANE *&17:05&8&2&1&1&0&3&18&16.7&3&0&32&27&+5
+\\
+\rowcolor[HTML]{EEEEEE}
+10 & NETTE BASTIEN *&29:52&15&5&0&1&4&5&20&25.0&4&5&55&45&+10
+\\
+\rowcolor[HTML]{F9F9F9}
+11 & DA COSTA ADRIEN *&23:30&9&3&0&2&1&3&18&16.7&0&0&40&33&+7
+\\
+\rowcolor[HTML]{EEEEEE}
+12 & ORTLIEB JORDAN&21:05&7&2&1&1&0&2&17&11.8&1&2&30&28&+2
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &63&20&5&5&10&18&33&54.5&19&14&63&55&-1
+\\
+\hline
+\end{tabular}}
+\end{table}
+\begin{center}
+\large
+\textbf{FC ST LEON EGUISHEIM}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+4 & HUSSHERR MATHIEU&23:43&6&3&0&1&2&0&6&0.0&4&2&34&35&-1
+\\
+\rowcolor[HTML]{F9F9F9}
+6 & EHRSAM YVES *&37:05&2&0&0&0&0&2&8&25.0&4&4&53&58&-5
+\\
+\rowcolor[HTML]{EEEEEE}
+7 & BEYL ARNAUD *&27:52&12&5&0&0&5&2&8&25.0&4&5&31&38&-7
+\\
+\rowcolor[HTML]{F9F9F9}
+8 & VILLERS THOMAS *&20:58&10&4&0&0&4&2&8&25.0&2&2&35&35&0
+\\
+\rowcolor[HTML]{EEEEEE}
+10 & WEBER LOUIS&15:44&6&3&0&1&2&0&6&0.0&1&2&26&28&-2
+\\
+\rowcolor[HTML]{F9F9F9}
+12 & SCHUELLER YANNICK *&14:45&4&1&0&1&0&2&8&25.0&4&0&20&23&-3
+\\
+\rowcolor[HTML]{EEEEEE}
+13 & DUPONT CLEMENT *&28:41&0&0&0&0&0&0&6&0.0&5&6&32&45&-13
+\\
+\rowcolor[HTML]{F9F9F9}
+14 & THIBAUD ERIC&16:05&11&5&1&0&4&0&6&0.0&4&8&26&31&-5
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{EEEEEE}
+ & Equipe &  &55&23&1&3&19&8&14&57.1&30&33&55&63&-4
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{@. BERRWILLER STAFFELFELDEN BC}
+\section*{Défaite 59 - 69}
+\large
+\textbf{ABC LUTTERBACH}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+3 & NETTE BASTIEN *&23:51&10&4&0&0&4&2&15&13.3&5&2&42&40&+2
+\\
+\rowcolor[HTML]{F9F9F9}
+4 & ALBRECHT SERGE&17:21&3&1&1&0&0&0&13&0.0&2&0&30&34&-4
+\\
+\rowcolor[HTML]{EEEEEE}
+5 & FREDJ SALEM *&23:11&6&3&0&0&3&0&13&0.0&1&0&29&35&-6
+\\
+\rowcolor[HTML]{F9F9F9}
+6 & GERBER QUENTIN *&32:11&15&4&0&0&4&7&20&35.0&2&2&50&50&0
+\\
+\rowcolor[HTML]{EEEEEE}
+7 & KAUFFER HUGO&7:43&2&1&0&0&1&0&13&0.0&3&4&15&16&-1
+\\
+\rowcolor[HTML]{F9F9F9}
+8 & WALCH FRANCK *&23:13&10&5&0&1&4&0&13&0.0&3&2&36&29&+7
+\\
+\rowcolor[HTML]{EEEEEE}
+9 & BOUHASSANE SOFIANE *&21:07&3&1&0&0&1&1&14&7.1&2&3&28&32&-4
+\\
+\rowcolor[HTML]{F9F9F9}
+11 & DA COSTA ADRIEN&12:30&2&1&0&0&1&0&13&0.0&1&0&20&22&-2
+\\
+\rowcolor[HTML]{EEEEEE}
+12 & HALM CYRIL&21:21&8&3&0&1&2&2&15&13.3&2&2&26&49&-23
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &59&23&1&2&20&12&25&48.0&23&22&59&69&-19
+\\
+\hline
+\end{tabular}}
+\end{table}
+\begin{center}
+\large
+\textbf{BERRWILLER STAFFELFELDEN BC}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+4 & BERTRAND MAXENCE&25:24&4&2&0&0&2&0&11&0.0&1&0&41&39&+2
+\\
+\rowcolor[HTML]{F9F9F9}
+5 & PROBST LUCAS *&18:18&8&1&1&0&0&5&16&31.3&1&2&41&25&+16
+\\
+\rowcolor[HTML]{EEEEEE}
+6 & MARTINET THIBAUT *&16:22&5&2&1&0&1&0&11&0.0&0&0&36&23&+13
+\\
+\rowcolor[HTML]{F9F9F9}
+7 & BICKEL ROMAIN&22:26&4&1&0&0&1&2&13&15.4&3&4&48&26&+22
+\\
+\rowcolor[HTML]{EEEEEE}
+8 & NANDJAN JEAN DANIEL&14:45&6&3&0&0&3&0&11&0.0&0&0&19&24&-5
+\\
+\rowcolor[HTML]{F9F9F9}
+9 & MERCIER JEREMY *&25:56&16&6&2&0&4&2&13&15.4&1&2&34&38&-4
+\\
+\rowcolor[HTML]{EEEEEE}
+10 & CONTI JUSTIN&22:43&4&2&0&0&2&0&11&0.0&2&0&31&29&+2
+\\
+\rowcolor[HTML]{F9F9F9}
+11 & PATER GUILLAUME&15:05&3&1&0&0&1&1&12&8.3&3&6&33&25&+8
+\\
+\rowcolor[HTML]{EEEEEE}
+12 & ZAID EL KHIL FARID *&15:23&10&4&2&0&2&0&11&0.0&3&5&25&35&-10
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &69&26&6&0&20&11&22&50.0&18&25&69&59&+10
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{vs. HATTMATT SS}
+\section*{Défaite 68 - 71}
+\large
+\textbf{ABC LUTTERBACH}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+4 & ALBRECHT SERGE&27:39&3&1&1&0&0&0&7&0.0&3&2&39&45&-6
+\\
+\rowcolor[HTML]{F9F9F9}
+5 & FREDJ SALEM *&20:59&8&3&0&1&2&2&9&22.2&5&3&30&34&-4
+\\
+\rowcolor[HTML]{EEEEEE}
+6 & BOUHASSANE SOFIANE *&26:25&3&1&1&0&0&0&7&0.0&1&2&42&44&-2
+\\
+\rowcolor[HTML]{F9F9F9}
+7 & ORTLIEB JORDAN&14:33&0&0&0&0&0&0&7&0.0&2&2&19&22&-3
+\\
+\rowcolor[HTML]{EEEEEE}
+8 & WALCH FRANCK&10:58&12&5&2&2&1&0&7&0.0&2&0&16&20&-4
+\\
+\rowcolor[HTML]{F9F9F9}
+9 & GERBER QUENTIN *&27:27&16&5&1&1&3&5&12&41.7&5&2&48&38&+10
+\\
+\rowcolor[HTML]{EEEEEE}
+10 & NETTE BASTIEN *&37:17&8&2&0&0&2&4&11&36.4&3&5&53&55&-2
+\\
+\rowcolor[HTML]{F9F9F9}
+11 & DA COSTA ADRIEN *&24:45&7&2&0&1&1&3&10&30.0&2&2&41&39&+2
+\\
+\rowcolor[HTML]{EEEEEE}
+12 & HALM CYRIL&19:18&7&3&0&0&3&1&8&12.5&5&8&27&30&-3
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &68&23&5&5&13&17&24&70.8&31&30&68&71&-3
+\\
+\hline
+\end{tabular}}
+\end{table}
+\begin{center}
+\large
+\textbf{HATTMATT SS}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+4 & SCHUTZ GAUTHIER *&28:01&16&6&4&0&2&0&17&0.0&3&5&47&45&+2
+\\
+\rowcolor[HTML]{F9F9F9}
+5 & EBERLIN LUDOVIC *&34:00&7&3&0&1&2&1&18&5.6&1&2&60&46&+14
+\\
+\rowcolor[HTML]{EEEEEE}
+6 & LAMBERT GUILLAUME&20:20&2&0&0&0&0&2&19&10.5&1&0&30&30&0
+\\
+\rowcolor[HTML]{F9F9F9}
+7 & LIENHERR JORIS&25:51&7&2&1&1&0&2&19&10.5&2&0&38&42&-4
+\\
+\rowcolor[HTML]{EEEEEE}
+8 & DAEHN VINCENT&11:28&3&1&1&0&0&0&17&0.0&3&6&18&13&+5
+\\
+\rowcolor[HTML]{F9F9F9}
+9 & HELMSTETTER MAXIME *&38:34&13&6&0&5&1&1&18&5.6&2&2&61&54&+7
+\\
+\rowcolor[HTML]{EEEEEE}
+10 & ERNST JULIEN&5:58&0&0&0&0&0&0&17&0.0&0&0&8&12&-4
+\\
+\rowcolor[HTML]{F9F9F9}
+11 & ADOLFF KEVIN *&39:36&17&5&0&0&5&7&24&29.2&3&6&62&59&+3
+\\
+\rowcolor[HTML]{EEEEEE}
+12 & FECHTER LOUIS&5:50&4&2&0&0&2&0&17&0.0&2&0&11&11&0
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &71&26&6&7&13&13&30&43.3&19&24&71&68&+8
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{@. SELESTAT BC}
+\section*{Défaite 53 - 64}
+\large
+\textbf{ABC LUTTERBACH}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+5 & FREDJ SALEM *&28:48&20&7&0&0&7&6&12&50.0&4&5&45&53&-8
+\\
+\rowcolor[HTML]{F9F9F9}
+6 & GERBER QUENTIN *&29:54&5&0&0&0&0&5&11&45.5&5&4&46&53&-7
+\\
+\rowcolor[HTML]{EEEEEE}
+7 & ORTLIEB JORDAN&15:58&0&0&0&0&0&0&6&0.0&3&4&24&16&+8
+\\
+\rowcolor[HTML]{F9F9F9}
+8 & WALCH FRANCK&8:02&0&0&0&0&0&0&6&0.0&1&0&5&7&-2
+\\
+\rowcolor[HTML]{EEEEEE}
+9 & BOUHASSANE SOFIANE *&29:51&7&2&0&1&1&3&9&33.3&3&3&33&53&-20
+\\
+\rowcolor[HTML]{F9F9F9}
+10 & HALM CYRIL *&29:56&10&5&0&3&2&0&6&0.0&4&7&44&54&-10
+\\
+\rowcolor[HTML]{EEEEEE}
+11 & DA COSTA ADRIEN *&31:37&7&2&0&2&0&3&9&33.3&0&0&45&57&-12
+\\
+\rowcolor[HTML]{F9F9F9}
+12 & RENGER MAXIME&17:56&4&2&0&0&2&0&6&0.0&3&4&18&21&-3
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{EEEEEE}
+ & Equipe &  &53&18&0&6&12&17&23&73.9&26&31&53&64&-1
+\\
+\hline
+\end{tabular}}
+\end{table}
+\begin{center}
+\large
+\textbf{SELESTAT BC}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+5 & CHAUVIN LUDOVIC *&29:47&8&1&1&0&0&5&19&26.3&3&6&39&41&-2
+\\
+\rowcolor[HTML]{F9F9F9}
+7 & OZALAKUS ILHAN&20:38&5&2&1&0&1&0&14&0.0&1&0&30&21&+9
+\\
+\rowcolor[HTML]{EEEEEE}
+8 & MANSOUR MOHAMED *&25:42&9&3&0&0&3&3&17&17.6&3&4&50&38&+12
+\\
+\rowcolor[HTML]{F9F9F9}
+10 & POISSON THOMAS&22:45&4&2&0&1&1&0&14&0.0&2&0&31&30&+1
+\\
+\rowcolor[HTML]{EEEEEE}
+11 & LEBURGUE CHARLES *&15:41&2&0&0&0&0&2&16&12.5&3&4&25&18&+7
+\\
+\rowcolor[HTML]{F9F9F9}
+12 & MAURER SYLVAIN&15:11&3&1&0&0&1&1&15&6.7&2&0&22&17&+5
+\\
+\rowcolor[HTML]{EEEEEE}
+13 & HIRTZ LUCAS *&30:12&22&8&0&0&8&6&20&30.0&3&4&56&42&+14
+\\
+\rowcolor[HTML]{F9F9F9}
+14 & KRETZ VICTOR *&28:33&9&4&1&0&3&0&14&0.0&3&4&50&39&+11
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{EEEEEE}
+ & Equipe &  &64&22&3&1&18&17&31&54.8&21&23&64&53&-3
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+\begin{center}
+\section*{vs. GEISPOLSHEIM CJS 2}
+\section*{Victoire 96 - 84}
+
+\large
+\textbf{ABC LUTTERBACH}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+3 & NETTE BASTIEN *&31.5&28&12&1&5&6&3&12&25.0&2&2&71&53&+18
+\\
+\rowcolor[HTML]{F9F9F9}
+4 & ALBRECHT SERGE&18.7&0&0&0&0&0&0&9&0.0&1&2&37&38&-1
+\\
+\rowcolor[HTML]{EEEEEE}
+5 & FREDJ SALEM *&30.1&22&9&4&2&3&0&9&0.0&4&6&77&67&+10
+\\
+\rowcolor[HTML]{F9F9F9}
+6 & GERBER QUENTIN *&21.2&16&5&3&1&1&3&12&25.0&3&6&50&52&-2
+\\
+\rowcolor[HTML]{EEEEEE}
+7 & KAUFFER HUGO&9.5&3&1&1&0&0&0&9&0.0&1&0&26&27&-1
+\\
+\rowcolor[HTML]{F9F9F9}
+8 & WALCH FRANCK&13.2&4&2&0&1&1&0&9&0.0&5&9&29&35&-6
+\\
+\rowcolor[HTML]{EEEEEE}
+9 & BOUHASSANE SOFIANE *&26.9&8&4&0&2&2&0&9&0.0&0&0&57&49&+8
+\\
+\rowcolor[HTML]{F9F9F9}
+10 & HALM CYRIL&17.4&7&3&0&1&2&1&10&10.0&4&4&45&32&+13
+\\
+\rowcolor[HTML]{EEEEEE}
+11 & DA COSTA ADRIEN *&17.8&3&1&0&0&1&1&10&10.0&4&4&45&31&+14
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{F9F9F9}
+ & Equipe &  &96&38&10&12&16&10&19&52.6&24&32&96&84&+2
+\\
+\hline
+\end{tabular}}
+\end{table}
+\begin{center}
+\large
+\textbf{GEISPOLSHEIM CJS 2}
+\normalsize
+\end{center}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|clccccccccccccccc|}
+\hline
+\rowcolor[HTML]{F9F9F9}
+\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \% & ftes & LF c. & + & - & +/-  \\ \Xhline{3\arrayrulewidth}
+
+\rowcolor[HTML]{EEEEEE}
+4 & LUX ARTHAUD *&23.5&9&4&1&1&2&0&12&0.0&2&2&51&59&-8
+\\
+\rowcolor[HTML]{F9F9F9}
+5 & ULMER MATS *&39.9&21&9&0&6&3&3&15&20.0&5&9&83&94&-11
+\\
+\rowcolor[HTML]{EEEEEE}
+7 & HEITZ ETIENNE *&35.3&16&5&1&1&3&5&17&29.4&1&2&73&76&-3
+\\
+\rowcolor[HTML]{F9F9F9}
+8 & VOLZ FLORIAN *&34.0&14&4&4&0&0&2&14&14.3&3&1&71&86&-15
+\\
+\rowcolor[HTML]{EEEEEE}
+14 & ALI JOEL *&34.3&9&2&0&0&2&5&17&29.4&2&2&73&78&-5
+\\
+\rowcolor[HTML]{F9F9F9}
+15 & SCHNEIDER PASCAL&6.8&2&0&0&0&0&2&14&14.3&1&2&10&22&-12
+\\
+\Xhline{2\arrayrulewidth}
+\rowcolor[HTML]{EEEEEE}
+ & Equipe &  &84&29&6&10&13&20&32&62.5&16&19&84&96&-6
+\\
+\hline
+\end{tabular}}
+\end{table}
+\newpage
+
+\end{document}
+

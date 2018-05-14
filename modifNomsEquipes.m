@@ -27,6 +27,7 @@ gamedata.domicilewithspace = strrep(gamedata.domicilewithspace,'SAINT ','ST ');
 gamedata.domicilewithspace = strrep(gamedata.domicilewithspace,'SAINTE','STE');
 gamedata.domicilewithspace = strrep(gamedata.domicilewithspace,'ATHLETIC CLUB','AC');
 gamedata.domicilewithspace = strrep(gamedata.domicilewithspace,'AMICALE LAIQUE','AL');
+gamedata.domicilewithspace = strrep(gamedata.domicilewithspace,' ESPOIR','');
 
 
 claim = gamedata.domicilewithspace;
@@ -81,6 +82,7 @@ gamedata.visiteurwithspace = strrep(gamedata.visiteurwithspace,'SAINT ','ST ');
 gamedata.visiteurwithspace = strrep(gamedata.visiteurwithspace,'SAINTE','STE');
 gamedata.visiteurwithspace = strrep(gamedata.visiteurwithspace,'ATHLETIC CLUB','AC');
 gamedata.visiteurwithspace = strrep(gamedata.visiteurwithspace,'AMICALE LAIQUE','AL');
+gamedata.visiteurwithspace = strrep(gamedata.visiteurwithspace,' ESPOIR','');
 
 %supprime l'espace a la fin du nom de l'equipe
 while strcmp(gamedata.visiteurwithspace(end),' ')

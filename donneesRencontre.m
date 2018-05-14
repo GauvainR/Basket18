@@ -28,8 +28,11 @@ gamedata.chpt = strrep(gamedata.chpt,' ','_');
 % Changement généraux
 gamedata.chpt = strrep(gamedata.chpt,'1/2','DEMI');
 gamedata.chpt = strrep(gamedata.chpt,'BARR','Barrage');
-gamedata.chpt = strrep(gamedata.chpt,'FINALE','FIN');
+gamedata.chpt = strrep(gamedata.chpt,'FINALES','Finales');
+gamedata.chpt = strrep(gamedata.chpt,'FINALE','Finale');
 gamedata.chpt = strrep(gamedata.chpt,'FIN','Finale');
+gamedata.chpt = strrep(gamedata.chpt,'DEMI','Demi');
+
 
 % Régionaux
 gamedata.chpt = strrep(gamedata.chpt,'R1SEM','PNM');
@@ -78,10 +81,16 @@ gamedata.chpt = strrep(gamedata.chpt,'LR19_TCSM_5','CFM');
 gamedata.chpt = strrep(gamedata.chpt,'C_CANDAU_1/16E','Cpe_Candau'); %CD40
 gamedata.chpt = strrep(gamedata.chpt,'C_CANDAU_1/8E','Cpe_Candau'); %CD40
 
+gamedata.chpt = strrep(gamedata.chpt,'CPE_ENCOU._SM___1/4','CCMM'); % credit mut CD67
 gamedata.chpt = strrep(gamedata.chpt,'CPE_ENCOU._SM___2EME','CCMM'); % credit mut CD67
 gamedata.chpt = strrep(gamedata.chpt,'CPE_ENCOU._SM___1/8EME','CCMM'); % credit mut CD67
+gamedata.chpt = strrep(gamedata.chpt,'CPE_ENCOU._SM___DEMI','CCMM');
 gamedata.chpt = strrep(gamedata.chpt,'C_MASC_Finale','CCMM'); % credit mut CD68 saison 16-17
 gamedata.chpt = strrep(gamedata.chpt,'DEMI_Finale','Demi_Finale');
+
+gamedata.chpt = strrep(gamedata.chpt,'NM3_1_4_A','NM3_PO');
+gamedata.chpt = strrep(gamedata.chpt,'NM3_1_4_R','NM3_PO');
+gamedata.chpt = strrep(gamedata.chpt,'NM2_1/4_A','NM2_PO');
 
 %avoid 1/4, 1/2 etc...
 if gamedata.chpt(1:3) == 'CCM'
@@ -92,12 +101,27 @@ if gamedata.chpt(1:3) == 'CCM'
     end
 end
 
+% coupe CD33
+if gamedata.chpt(1:3) == 'C33'
+    if gamedata.chpt(1:6) == 'C33_SM'
+    gamedata.chpt = 'C33_SM';
+    elseif gamedata.chpt(1:6) == 'C33_SF' 
+    gamedata.chpt = 'C33_SF';
+    end
+end
+
 % coupe de france
 if strcmp(gamedata.chpt(1:3), 'TCS')
     if strcmp(gamedata.chpt(1:4), 'TCSM')
         gamedata.chpt = 'CFM';
     elseif strcmp(gamedata.chpt(1:4), 'TCSF')
         gamedata.chpt = 'CFF';
+    end
+end
+
+if strcmp(gamedata.chpt(1:3), 'SCS')
+    if strcmp(gamedata.chpt(1:4), 'SCSO')
+        gamedata.chpt = 'SCSO';
     end
 end
     

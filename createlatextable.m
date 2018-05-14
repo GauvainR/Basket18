@@ -2,18 +2,39 @@ load('stats.mat');
 % Le code est créé dans latextable.txt. Copier coller dans un fichier latex
 
 %% Partie à adapter 
-comite = 'LR02';
+comite = 'CD45';
 type = 'championnat';
-chpt = 'R2M';
+chpt = 'DM1';
 poule = 'Poule_A';
-equipe = 'ABC_LUTTERBACH';
+equipe = 'USM_MONTARGIS_2';
 
+% listeequipe = fieldnames(stats.(comite).championnat.(chpt).(poule));
+% fileNameToCreate=[];
+% for idxEquipe = 1 : length(listeequipe)
+%     equipe = listeequipe{idxEquipe};
+%     fileNameToCreate{idxEquipe} =  ['Stats_17_18_' equipe];
+%     
+%     
+% end
+% str = string(fileNameToCreate);
+% fileNameToCreate = str';
+% for idxEquipe = 1 : length(listeequipe)
+% 
+%     equipe = listeequipe{idxEquipe};
+%     
+%     nomFichierOut = sprintf('FichiersPDF_bulletins/Stats_17_18_%s.txt',equipe)
+% %     nomFichierOut = strcat('Stats_17-18_',equipe,'.tex');
+% %     a =nomFichierOut{1}
+%    
+
+% input_file = ['Stats_17_18_' equipe '.txt'];
+nomFichierOut = 'latextable.txt';
 tot = [];
 mean = [];
 
 latextable_finalisation = sprintf(['\\hline','\n','\\end{tabular}}','\n','\\end{table}','\n','\\newpage']);
 
-fid = fopen('latextable.txt','w');
+fid = fopen(nomFichierOut,'w');
 fprintf(fid,'%s\n','');
 fclose(fid);
 
@@ -59,7 +80,7 @@ latex_fancy = sprintf(['%% custom footers and headers','\n', ...
 '\\renewcommand{\\headrulewidth}{1pt}','\n', ...
 '\\renewcommand{\\footrulewidth}{1pt}']);
 
-fid = fopen('latextable.txt','A');
+fid = fopen(nomFichierOut,'A');
 fprintf(fid,'%s\n',latex_init,latex_fancy);
 fclose(fid);
 
@@ -78,7 +99,7 @@ latex_begin_document=sprintf(['\\begin{document}','\n\n',...
 '}','\n\n',...
 '\\maketitle']);
 
-fid = fopen('latextable.txt','A');
+fid = fopen(nomFichierOut,'A');
 fprintf(fid,'%s\n',latex_begin_document);
 fclose(fid);
 
@@ -119,7 +140,7 @@ latex_abreviations= sprintf(['\\newgeometry{left=3cm,bottom=3cm}','\n',...
 '\\normalsize','\n',...
 '\\restoregeometry','\n']);
 
-fid = fopen('latextable.txt','A');
+fid = fopen(nomFichierOut,'A');
 fprintf(fid,'%s\n',latex_abreviations);
 fclose(fid);
 
@@ -128,7 +149,7 @@ fclose(fid);
 % Page titre
 latextable_titlepage = sprintf(['\\newpage','\n','\\thispagestyle{empty}','\n','\\begin{center}','\n','\\vspace*{\\fill}','\n','\\includegraphics[width=0.6\\textwidth]{logo_BS_ecrit_noir} \\\\','\n','\\vspace{120pt}','\n','\\Huge\\bfseries Statistiques  \\\\','\n','\\vspace{30pt} \\Huge\\bfseries Collectives  \\\\','\n','\\vspace{90pt} \\vspace*{\\fill} \\end{center}','\n\n','\\newpage']);
 
-fid = fopen('latextable.txt','A');
+fid = fopen(nomFichierOut,'A');
 fprintf(fid,'%s\n',latextable_titlepage);
 fclose(fid);
 
@@ -139,7 +160,7 @@ latextable_title = sprintf(['\\begin{center}','\n','\\section*{Stats collectives
 %Initialisation
 latextable_initialisation = sprintf(['\\begin{table}[h]','\n','\\centering','\n','\\resizebox{\\textwidth}{!}{%%','\n','\\begin{tabular}{|lcccccccccccccccc|}','\n','\\hline','\n','\\rowcolor[HTML]{F9F9F9}','\n','                          & pts m. & pts e. & pts 5 & pts bc & \\%% pts 5 & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \\%% & ftes & LF c. & ftes p. & âge  \\\\ \\Xhline{3\\arrayrulewidth}','\n']);
 
-fid = fopen('latextable.txt','A');
+fid = fopen(nomFichierOut,'A');
 fprintf(fid,'%s\n',latextable_title,latextable_initialisation);
 fclose(fid);
 
@@ -159,14 +180,14 @@ fclose(fid);
         
         latextable_line = sprintf([nomrencontre,'&',strrep(num2str(statteam.matchs(nbmatch).pts),'NaN','-'),'&',num2str(statteam.matchs(nbmatch).ptsencaisses),'&',num2str(statteam.matchs(nbmatch).ptscinq),'&',num2str(statteam.matchs(nbmatch).ptsbanc),'&',num2str(statteam.matchs(nbmatch).pctptscinq,'%3.1f'),'&',num2str(statteam.matchs(nbmatch).tirs),'&',num2str(statteam.matchs(nbmatch).troispts),'&',num2str(statteam.matchs(nbmatch).deuxext),'&',num2str(statteam.matchs(nbmatch).deuxint),'&',num2str(statteam.matchs(nbmatch).lfreussis),'&',num2str(statteam.matchs(nbmatch).lftentes),'&',strrep(num2str(statteam.matchs(nbmatch).lfpct,'%3.1f'),'NaN','-'),'&',num2str(statteam.matchs(nbmatch).ftes),'&',num2str(statteam.matchs(nbmatch).lfconc),'&',num2str(statteam.matchs(nbmatch).ftesprov),'&',strrep(num2str(statteam.matchs(nbmatch).age,'%3.1f'),'NaN','-'),'\n','\\\\']);
     
-        fid = fopen('latextable.txt','A');
+        fid = fopen(nomFichierOut,'A');
         fprintf(fid,'%s\n',latextable_colorline);
         fprintf(fid,'%s\n',latextable_line);
         fclose(fid);
     end
     
     %ligne horizontale de 2 pixels
-    fid = fopen('latextable.txt','A');
+    fid = fopen(nomFichierOut,'A');
     fprintf(fid,'%s\n','\Xhline{2\arrayrulewidth}');
     fclose(fid); 
     
@@ -203,7 +224,7 @@ fclose(fid);
         
         
         tot.pts = tot.pts + statteam.matchs(i).pts;
-        tot.ptsencaisses = tot.ptsencaisses + statteam.matchs(i).pts;
+        tot.ptsencaisses = tot.ptsencaisses + statteam.matchs(i).ptsencaisses;
         tot.ptscinq = tot.ptscinq + statteam.matchs(i).ptscinq;
         tot.ptsbanc = tot.ptsbanc + statteam.matchs(i).ptsbanc;
         tot.tirs = tot.tirs + statteam.matchs(i).tirs;
@@ -251,14 +272,17 @@ fclose(fid);
     
     
     if mod(nbmatch,2)
-        latextable_totline = sprintf(['\\rowcolor[HTML]{F9F9F9}','\n','\\textbf{Total} & ',strrep(num2str(tot.pts),'NaN','-'),'&',num2str(tot.ptsencaisses),'&',num2str(tot.ptscinq),'&',num2str(tot.ptsbanc),'&',num2str(tot.pctptscinq,'%3.1f'),'&',num2str(tot.tirs),'&',num2str(tot.troispts),'&',num2str(tot.deuxext),'&',num2str(tot.deuxint),'&',num2str(tot.lfreussis),'&',num2str(tot.lftentes),'&',strrep(num2str(tot.lfpct,'%3.1f'),'NaN','-'),'&',num2str(tot.ftes),'&',num2str(tot.lfconc),'&',num2str(tot.ftesprov),'&','-','\n','\\\\']);
+        latextable_totline = sprintf(['\\rowcolor[HTML]{F9F9F9}','\n','\\textbf{Total} & ',...
+            strrep(num2str(tot.pts),'NaN','-'),'&',...
+            num2str(tot.ptsencaisses),'&',...
+            num2str(tot.ptscinq),'&',num2str(tot.ptsbanc),'&',num2str(tot.pctptscinq,'%3.1f'),'&',num2str(tot.tirs),'&',num2str(tot.troispts),'&',num2str(tot.deuxext),'&',num2str(tot.deuxint),'&',num2str(tot.lfreussis),'&',num2str(tot.lftentes),'&',strrep(num2str(tot.lfpct,'%3.1f'),'NaN','-'),'&',num2str(tot.ftes),'&',num2str(tot.lfconc),'&',num2str(tot.ftesprov),'&','-','\n','\\\\']);
         latextable_meanline = sprintf(['\\rowcolor[HTML]{EEEEEE}','\n','\\textbf{Moyenne} & ',strrep(num2str(mean.pts,'%3.1f'),'NaN','-'),'&',num2str(mean.ptsencaisses,'%3.1f'),'&',num2str(mean.ptscinq,'%3.1f'),'&',num2str(mean.ptsbanc,'%3.1f'),'&',num2str(mean.pctptscinq,'%3.1f'),'&',num2str(mean.tirs,'%3.1f'),'&',num2str(mean.troispts,'%3.1f'),'&',num2str(mean.deuxext,'%3.1f'),'&',num2str(mean.deuxint,'%3.1f'),'&',num2str(mean.lfreussis,'%3.1f'),'&',num2str(mean.lftentes,'%3.1f'),'&',strrep(num2str(mean.lfpct,'%3.1f'),'NaN','-'),'&',num2str(mean.ftes,'%3.1f'),'&',num2str(mean.lfconc,'%3.1f'),'&',num2str(mean.ftesprov,'%3.1f'),'&',strrep(num2str(mean.age,'%3.1f'),'NaN','-'),'\n','\\\\']);
     else
         latextable_totline = sprintf(['\\rowcolor[HTML]{EEEEEE}','\n','\\textbf{Total} & ',strrep(num2str(tot.pts),'NaN','-'),'&',num2str(tot.ptsencaisses),'&',num2str(tot.ptscinq),'&',num2str(tot.ptsbanc),'&',num2str(tot.pctptscinq,'%3.1f'),'&',num2str(tot.tirs),'&',num2str(tot.troispts),'&',num2str(tot.deuxext),'&',num2str(tot.deuxint),'&',num2str(tot.lfreussis),'&',num2str(tot.lftentes),'&',strrep(num2str(tot.lfpct,'%3.1f'),'NaN','-'),'&',num2str(tot.ftes),'&',num2str(tot.lfconc),'&',num2str(tot.ftesprov),'&','-','\n','\\\\']);
         latextable_meanline = sprintf(['\\rowcolor[HTML]{F9F9F9}','\n','\\textbf{Moyenne} & ',strrep(num2str(mean.pts,'%3.1f'),'NaN','-'),'&',num2str(mean.ptsencaisses,'%3.1f'),'&',num2str(mean.ptscinq,'%3.1f'),'&',num2str(mean.ptsbanc,'%3.1f'),'&',num2str(mean.pctptscinq,'%3.1f'),'&',num2str(mean.tirs,'%3.1f'),'&',num2str(mean.troispts,'%3.1f'),'&',num2str(mean.deuxext,'%3.1f'),'&',num2str(mean.deuxint,'%3.1f'),'&',num2str(mean.lfreussis,'%3.1f'),'&',num2str(mean.lftentes,'%3.1f'),'&',strrep(num2str(mean.lfpct,'%3.1f'),'NaN','-'),'&',num2str(mean.ftes,'%3.1f'),'&',num2str(mean.lfconc,'%3.1f'),'&',num2str(mean.ftesprov,'%3.1f'),'&',strrep(num2str(mean.age,'%3.1f'),'NaN','-'),'\n','\\\\']);
     end
     
-    fid = fopen('latextable.txt','A');
+    fid = fopen(nomFichierOut,'A');
     fprintf(fid,'%s\n',latextable_totline,latextable_meanline,latextable_finalisation);
     fclose(fid);
     
@@ -270,7 +294,7 @@ latextable_title = sprintf(['\\begin{center}','\n','\\section*{Stats moyennes pa
 %Initialisation
 latextable_initialisation = sprintf(['\\begin{table}[h]','\n','\\centering','\n','\\resizebox{\\textwidth}{!}{%%','\n','\\begin{tabular}{|lccccccccccccccc|}','\n','\\hline','\n','\\rowcolor[HTML]{F9F9F9}','\n','                          & MJ & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \\%% & ftes & LF c. & + & - & +/-  \\\\ \\Xhline{3\\arrayrulewidth}','\n']);
 
-fid = fopen('latextable.txt','A');
+fid = fopen(nomFichierOut,'A');
 fprintf(fid,'%s\n',latextable_title,latextable_initialisation);
 fclose(fid);
 for ligne = 1 : length(listejoueur)
@@ -294,16 +318,44 @@ for ligne = 1 : length(listejoueur)
     end
 
     if mod(ligne,2)
-        latextable_meanline = sprintf(['\\rowcolor[HTML]{EEEEEE}','\n',nomjoueur,' & ',num2str(nbMj),' & ',strrep(num2str(mean.tpsdejeu,'%3.1f'),'NaN','-'),' & ',num2str(mean.pts,'%3.1f'),' & ',num2str(mean.tirs,'%3.1f'),' & ',num2str(mean.troispts,'%3.1f'),' & ',num2str(mean.deuxext,'%3.1f'),' & ',num2str(mean.deuxint,'%3.1f'),' & ',num2str(mean.lfreussis,'%3.1f'),' & ',num2str(mean.lftentes,'%3.1f'),' & ',strrep(num2str(mean.lfpct,'%3.1f'),'NaN','-'),' & ',num2str(mean.ftes,'%3.1f'),' & ',num2str(mean.lfconc,'%3.1f'),' & ',strrep(num2str(mean.ptsmarq,'%3.1f'),'NaN','-'),' & ',strrep(num2str(mean.ptsenc,'%3.1f'),'NaN','-'),' & ',strrep(num2str(mean.ecart,'%3.1f'),'NaN','-'),'\n','\\\\']);
+        latextable_meanline = sprintf(['\\rowcolor[HTML]{EEEEEE}','\n',nomjoueur,' & ',num2str(nbMj),' & ',...
+            strrep(num2str(mean.tpsdejeu,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.pts,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.tirs,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.troispts,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.deuxext,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.deuxint,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.lfreussis,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.lftentes,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.lfpct,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.ftes,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.lfconc,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.ptsmarq,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.ptsenc,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.ecart,'%3.1f'),'NaN','-'),'\n','\\\\']);
     else
-        latextable_meanline = sprintf(['\\rowcolor[HTML]{F9F9F9}','\n',nomjoueur,' & ',num2str(nbMj),' & ',strrep(num2str(mean.tpsdejeu,'%3.1f'),'NaN','-'),' & ',num2str(mean.pts,'%3.1f'),' & ',num2str(mean.tirs,'%3.1f'),' & ',num2str(mean.troispts,'%3.1f'),' & ',num2str(mean.deuxext,'%3.1f'),' & ',num2str(mean.deuxint,'%3.1f'),' & ',num2str(mean.lfreussis,'%3.1f'),' & ',num2str(mean.lftentes,'%3.1f'),' & ',strrep(num2str(mean.lfpct,'%3.1f'),'NaN','-'),' & ',num2str(mean.ftes,'%3.1f'),' & ',num2str(mean.lfconc,'%3.1f'),' & ',strrep(num2str(mean.ptsmarq,'%3.1f'),'NaN','-'),' & ',strrep(num2str(mean.ptsenc,'%3.1f'),'NaN','-'),' & ',strrep(num2str(mean.ecart,'%3.1f'),'NaN','-'),'\n','\\\\']);
+        latextable_meanline = sprintf(['\\rowcolor[HTML]{F9F9F9}','\n',nomjoueur,' & ',num2str(nbMj),' & ',...
+            strrep(num2str(mean.tpsdejeu,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.pts,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.tirs,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.troispts,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.deuxext,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.deuxint,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.lfreussis,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.lftentes,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.lfpct,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.ftes,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.lfconc,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.ptsmarq,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.ptsenc,'%3.1f'),'NaN','-'),' & ',...
+            strrep(num2str(mean.ecart,'%3.1f'),'NaN','-'),'\n','\\\\']);
     end
 
-    fid = fopen('latextable.txt','A');
+    fid = fopen(nomFichierOut,'A');
     fprintf(fid,'%s\n',latextable_meanline);
     fclose(fid);
 end
-fid = fopen('latextable.txt','A');
+fid = fopen(nomFichierOut,'A');
 fprintf(fid,'%s\n',latextable_finalisation);
 fclose(fid);
     
@@ -314,7 +366,7 @@ latextable_title = sprintf(['\\begin{center}','\n','\\section*{Stats totales}','
 %Initialisation
 latextable_initialisation = sprintf(['\\begin{table}[h]','\n','\\centering','\n','\\resizebox{\\textwidth}{!}{%%','\n','\\begin{tabular}{|lccccccccccccccc|}','\n','\\hline','\n','\\rowcolor[HTML]{F9F9F9}','\n','                          & MJ & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \\%% & ftes & LF c. & + & - & +/-  \\\\ \\Xhline{3\\arrayrulewidth}','\n']);
 
-fid = fopen('latextable.txt','A');
+fid = fopen(nomFichierOut,'A');
 fprintf(fid,'%s\n',latextable_title,latextable_initialisation);
 fclose(fid);
 for ligne = 1 : length(listejoueur)
@@ -373,11 +425,11 @@ for ligne = 1 : length(listejoueur)
             strrep(num2str(tot.ecart,'%3.0f'),'NaN','-'),'\n','\\\\']);
     end
 
-    fid = fopen('latextable.txt','A');
+    fid = fopen(nomFichierOut,'A');
     fprintf(fid,'%s\n',latextable_totline);
     fclose(fid);
 end
-fid = fopen('latextable.txt','A');
+fid = fopen(nomFichierOut,'A');
 fprintf(fid,'%s\n',latextable_finalisation);
 fclose(fid);
 
@@ -387,7 +439,7 @@ latextable_title = sprintf(['\\begin{center}','\n','\\section*{Stats ramenées su
 %Initialisation
 latextable_initialisation = sprintf(['\\begin{table}[h]','\n','\\centering','\n','\\resizebox{\\textwidth}{!}{%%','\n','\\begin{tabular}{|lccccccccccccccc|}','\n','\\hline','\n','\\rowcolor[HTML]{F9F9F9}','\n','                          & MJ & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \\%% & ftes & LF c. & + & - & +/-  \\\\ \\Xhline{3\\arrayrulewidth}','\n']);
 
-fid = fopen('latextable.txt','A');
+fid = fopen(nomFichierOut,'A');
 fprintf(fid,'%s\n',latextable_title,latextable_initialisation);
 fclose(fid);
 for ligne = 1 : length(listejoueur)
@@ -445,11 +497,11 @@ for ligne = 1 : length(listejoueur)
             strrep(num2str(min.ecart,'%3.1f'),'NaN','-'),'\n','\\\\']);
     end
 
-    fid = fopen('latextable.txt','A');
+    fid = fopen(nomFichierOut,'A');
     fprintf(fid,'%s\n',latextable_minline);
     fclose(fid);
 end
-fid = fopen('latextable.txt','A');
+fid = fopen(nomFichierOut,'A');
 fprintf(fid,'%s\n',latextable_finalisation);
 fclose(fid);
 
@@ -458,7 +510,7 @@ fclose(fid);
 % Page titre
 latextable_titlepage = sprintf(['\\thispagestyle{empty}','\n','\\begin{center}','\n','\\vspace*{\\fill}','\n','\\includegraphics[width=0.6\\textwidth]{logo_BS_ecrit_noir} \\\\','\n','\\vspace{120pt}','\n','\\Huge\\bfseries Statistiques  \\\\','\n','\\vspace{30pt} \\Huge\\bfseries Individuelles  \\\\','\n','\\vspace{90pt} \\vspace*{\\fill} \\end{center}','\n','\\newpage']);
 
-fid = fopen('latextable.txt','A');
+fid = fopen(nomFichierOut,'A');
 fprintf(fid,'%s\n',latextable_titlepage);
 fclose(fid);
 
@@ -478,7 +530,7 @@ latextable_title = sprintf(['\\begin{center}','\n','\\section*{',strrep(nomjoueu
 %Initialisation
 latextable_initialisation = sprintf(['\\begin{table}[h]','\n','\\centering','\n','\\resizebox{\\textwidth}{!}{%%','\n','\\begin{tabular}{|lcccccccccccccc|}','\n','\\hline','\n','\\rowcolor[HTML]{F9F9F9}','\n','                          & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \\%% & ftes & LF c. & + & - & +/-  \\\\ \\Xhline{3\\arrayrulewidth}','\n']);
 
-fid = fopen('latextable.txt','A');
+fid = fopen(nomFichierOut,'A');
 fprintf(fid,'%s\n',latextable_title,latextable_initialisation);
 fclose(fid);
 
@@ -505,13 +557,13 @@ fclose(fid);
         
         latextable_line = sprintf([nomrencontre,'&',strrep(num2str(statplayer(nbmatch).tpsdejeu,'%3.1f'),'NaN','-'),'&',num2str(statplayer(nbmatch).pts),'&',num2str(statplayer(nbmatch).tirs),'&',num2str(statplayer(nbmatch).troispts),'&',num2str(statplayer(nbmatch).deuxext),'&',num2str(statplayer(nbmatch).deuxint),'&',num2str(statplayer(nbmatch).lfreussis),'&',num2str(statplayer(nbmatch).lftentes),'&',strrep(num2str(statplayer(nbmatch).lfpct,'%3.1f'),'NaN','-'),'&',num2str(statplayer(nbmatch).ftes),'&',num2str(statplayer(nbmatch).lfconc),'&',strrep(num2str(statplayer(nbmatch).ptsmarq),'NaN','-'),'&',strrep(num2str(statplayer(nbmatch).ptsenc),'NaN','-'),'&',ecart,'\n','\\\\']);
     
-        fid = fopen('latextable.txt','A');
+        fid = fopen(nomFichierOut,'A');
         fprintf(fid,'%s\n',latextable_colorline);
         fprintf(fid,'%s\n',latextable_line);
         fclose(fid);
     end
     %ligne horizontale de 2 pixels
-    fid = fopen('latextable.txt','A');
+    fid = fopen(nomFichierOut,'A');
     fprintf(fid,'%s\n','\Xhline{2\arrayrulewidth}');
     fclose(fid); 
     
@@ -535,7 +587,7 @@ fclose(fid);
         latextable_meanline = sprintf(['\\rowcolor[HTML]{EEEEEE}','\n','\\textbf{Moyenne} & ',strrep(num2str(meanplayer.tpsdejeu,'%3.1f'),'NaN','-'),' & ',strrep(num2str(meanplayer.pts,'%3.1f'),'NaN','-'),' & ',strrep(num2str(meanplayer.tirs,'%3.1f'),'NaN','-'),' & ',strrep(num2str(meanplayer.troispts,'%3.1f'),'NaN','-'),' & ',strrep(num2str(meanplayer.deuxext,'%3.1f'),'NaN','-'),' & ',strrep(num2str(meanplayer.deuxint,'%3.1f'),'NaN','-'),' & ',strrep(num2str(meanplayer.lfreussis,'%3.1f'),'NaN','-'),' & ',strrep(num2str(meanplayer.lftentes,'%3.1f'),'NaN','-'),' & ',strrep(num2str(meanplayer.lfpct,'%3.1f'),'NaN','-'),' & ',strrep(num2str(meanplayer.ftes,'%3.1f'),'NaN','-'),' & ',strrep(num2str(meanplayer.lfconc,'%3.1f'),'NaN','-'),' & ',strrep(num2str(meanplayer.ptsmarq,'%3.1f'),'NaN','-'),' & ',strrep(num2str(meanplayer.ptsenc,'%3.1f'),'NaN','-'),' & ',ecartmean,'\n','\\\\']);
     end
     
-    fid = fopen('latextable.txt','A');
+    fid = fopen(nomFichierOut,'A');
     fprintf(fid,'%s\n',latextable_totline,latextable_minline,latextable_meanline,latextable_finalisation);
     fclose(fid);
     
@@ -544,7 +596,7 @@ end
 %% Table stats par match
 % Page titre
 latextable_titlepage = sprintf(['\\thispagestyle{empty}','\n','\\begin{center}','\n','\\vspace*{\\fill}','\n','\\includegraphics[width=0.6\\textwidth]{logo_BS_ecrit_noir} \\\\','\n','\\vspace{120pt}','\n','\\Huge\\bfseries Statistiques  \\\\','\n','\\vspace{30pt} \\Huge\\bfseries Par match  \\\\','\n','\\vspace{90pt} \\vspace*{\\fill} \\end{center}','\n','\\newpage']);
-fid = fopen('latextable.txt','A');
+fid = fopen(nomFichierOut,'A');
 fprintf(fid,'%s\n',latextable_titlepage);
 fclose(fid);
 
@@ -556,8 +608,6 @@ listematch = fieldnames(statparmatch);
 for ligne = 1 : length(statteam)
     numeroRencontre = statteam(ligne).numrencontre;
     
-    
-    
     nommatchtitle = statteam(ligne).nomrencontre;
     if strcmp(nommatchtitle(1:2),'@.')
         nommatch = ['at',nommatchtitle(4:end)];
@@ -567,7 +617,8 @@ for ligne = 1 : length(statteam)
     nommatch = strrep(nommatch,' ','_');
     nommatch = strrep(nommatch,'(','');
     nommatch = strrep(nommatch,')','');
-    structurematch = statparmatch.(nommatch); % si ca bloque la il y a un caracter special dans le nom d'equipe qui n'est pas le meme dans statsparmatch et statteam
+    nommatch = strrep(nommatch,'_ESPOIR',''); % a supprimer en 2019
+    %structurematch = statparmatch.(nommatch); % si ca bloque la il y a un caracter special dans le nom d'equipe qui n'est pas le meme dans statsparmatch et statteam
     
     if statteam(ligne).pts > statteam(ligne).ptsencaisses
         latextable_title = sprintf(['\\begin{center}','\n','\\section*{',...
@@ -585,61 +636,101 @@ for ligne = 1 : length(statteam)
         strrep(equipe,'_',' '),'}\n','\\normalsize','\n', '\\end{center}','\n']);
 
     %Initialisation
-    latextable_initialisation = sprintf(['\\begin{table}[h]','\n','\\centering','\n','\\resizebox{\\textwidth}{!}{%%','\n','\\begin{tabular}{|clccccccccccccccc|}','\n','\\hline','\n','\\rowcolor[HTML]{F9F9F9}','\n','\\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \\%% & ftes & LF c. & + & - & +/-  \\\\ \\Xhline{3\\arrayrulewidth}','\n']);
+    latextable_initialisation = sprintf(['\\begin{table}[h]','\n','\\centering','\n','\\resizebox{\\textwidth}{!}{%%','\n','\\begin{tabular}{|lccccccccccccccc|}','\n','\\hline','\n','\\rowcolor[HTML]{F9F9F9}','\n',' nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \\%% & ftes & LF c. & + & - & +/-  \\\\ \\Xhline{3\\arrayrulewidth}','\n']);
 
-    fid = fopen('latextable.txt','A');
+    fid = fopen(nomFichierOut,'A');
     fprintf(fid,'%s\n',latextable_title,latextable_nom_equipe,latextable_initialisation);
     fclose(fid);
-    
-    for nbjoueurs = 1 : length(statparmatch.(nommatch)) - 1
-        %couleur de la liugne selon pair ou impair
-        if mod(nbjoueurs,2)
-            latextable_colorline = sprintf(['\\rowcolor[HTML]{EEEEEE}']);
-        else
-            latextable_colorline = sprintf(['\\rowcolor[HTML]{F9F9F9}']);
-        end
-        
-        %avoir le + avant l'écart
-        nomjoueur = structurematch(nbjoueurs).nomjoueur;
-        if structurematch(nbjoueurs).ecart > 0
-            ecart = ['+',strrep(num2str(structurematch(nbjoueurs).ecart),'NaN','-')];
-        else
-            ecart = strrep(num2str(structurematch(nbjoueurs).ecart),'NaN','-');
-        end
+    nbjoueurs = 0; % for color rows
+    for idxjoueur = 1 : length(listejoueur)
+        checkexist = [];
+        nomjoueur = listejoueur{idxjoueur};
+        statsJoueur = stats.(comite).championnat.(chpt).(poule).(equipe).joueurs.(nomjoueur).matchs;
+        l = size(statsJoueur);
+       %Check if the match is already stored in the array
+       for nbexist = 1 : l(2)
+            checkexist(nbexist) = stats.(comite).championnat.(chpt).(poule).(equipe).joueurs.(nomjoueur).matchs(nbexist).numrencontre;
+       end
 
+       existnumrencontre = find((checkexist == numeroRencontre),1);
+
+       if isempty(existnumrencontre) == 0 % si le joueur a joué le match
+            
+           nbjoueurs = nbjoueurs + 1;
         
-        if length(structurematch(nbjoueurs).nomjoueur) > 20
-            if strcmp(structurematch(nbjoueurs).nomjoueur(end),'*')
-                nomjoueur = [structurematch(nbjoueurs).nomjoueur(1:19),'*'];
+            %couleur de la liugne selon pair ou impair
+            if mod(nbjoueurs,2)
+                latextable_colorline = sprintf(['\\rowcolor[HTML]{EEEEEE}']);
             else
-                nomjoueur = structurematch(nbjoueurs).nomjoueur(1:19);
+                latextable_colorline = sprintf(['\\rowcolor[HTML]{F9F9F9}']);
             end
-        else
-            nomjoueur = structurematch(nbjoueurs).nomjoueur;
-        end
-        
-        latextable_line = sprintf([num2str(structurematch(nbjoueurs).numero),' & ',nomjoueur,'&',strrep(num2str(structurematch(nbjoueurs).tpsdejeu,'%3.1f'),'NaN','-'),'&',num2str(structurematch(nbjoueurs).pts),'&',num2str(structurematch(nbjoueurs).tirs),'&',num2str(structurematch(nbjoueurs).troispts),'&',num2str(structurematch(nbjoueurs).deuxext),'&',num2str(structurematch(nbjoueurs).deuxint),'&',num2str(structurematch(nbjoueurs).lfreussis),'&',num2str(structurematch(nbjoueurs).lftentes),'&',strrep(num2str(structurematch(nbjoueurs).lfpct,'%3.1f'),'NaN','-'),'&',num2str(structurematch(nbjoueurs).ftes),'&',num2str(structurematch(nbjoueurs).lfconc),'&',strrep(num2str(structurematch(nbjoueurs).ptsmarq),'NaN','-'),'&',strrep(num2str(structurematch(nbjoueurs).ptsenc),'NaN','-'),'&',ecart,'\n','\\\\']);
-        
-        fid = fopen('latextable.txt','A');
-        fprintf(fid,'%s\n',latextable_colorline);
-        fprintf(fid,'%s\n',latextable_line);
-        fclose(fid);
+
+            %avoir le + avant l'écart
+            %nomjoueur = structurematch(nbjoueurs).nomjoueur;
+            if statsJoueur(existnumrencontre(1)).ecart > 0
+                ecart = ['+',strrep(num2str(statsJoueur(existnumrencontre(1)).ecart),'NaN','-')];
+            else
+                ecart = strrep(num2str(statsJoueur(existnumrencontre(1)).ecart),'NaN','-');
+            end
+
+
+%             if length(structurematch(nbjoueurs).nomjoueur) > 20
+%                 if strcmp(structurematch(nbjoueurs).nomjoueur(end),'*')
+%                     nomjoueur = [structurematch(nbjoueurs).nomjoueur(1:19),'*'];
+%                 else
+%                     nomjoueur = structurematch(nbjoueurs).nomjoueur(1:19);
+%                 end
+%             else
+%                 nomjoueur = structurematch(nbjoueurs).nomjoueur;
+%             end
+
+            latextable_line = sprintf([
+                strrep(nomjoueur,'_',' '),'&',...
+                strrep(num2str(statsJoueur(existnumrencontre(1)).tpsdejeu,'%3.1f'),'NaN','-'),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).pts),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).tirs),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).troispts),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).deuxext),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).deuxint),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).lfreussis),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).lftentes),'&',...
+                strrep(num2str(statsJoueur(existnumrencontre(1)).lfpct,'%3.1f'),'NaN','-'),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).ftes),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).lfconc),'&',...
+                strrep(num2str(statsJoueur(existnumrencontre(1)).ptsmarq),'NaN','-'),'&',...
+                strrep(num2str(statsJoueur(existnumrencontre(1)).ptsenc),'NaN','-'),'&',...
+                ecart,'\n','\\\\']);
+
+            fid = fopen(nomFichierOut,'A');
+            fprintf(fid,'%s\n',latextable_colorline);
+            fprintf(fid,'%s\n',latextable_line);
+            fclose(fid);
+       end
     end
     
     %ligne horizontale de 2 pixels
-    fid = fopen('latextable.txt','A');
+    fid = fopen(nomFichierOut,'A');
     fprintf(fid,'%s\n','\Xhline{2\arrayrulewidth}');
     fclose(fid);
     
+    l = size(statteam);
+       %Check if the match is already stored in the array
+       for nbexist = 1 : l(2)
+            checkexist(nbexist) = statteam(nbexist).numrencontre;
+       end
+
+       existnumrencontre = find((checkexist == numeroRencontre),1);
+
+    
     %ligne de total pour l'équipe A
-    if structurematch(nbjoueurs+1).ecart > 0
-        ecart = ['+',strrep(num2str(structurematch(nbjoueurs+1).ecart),'NaN','-')];
+    if statteam(existnumrencontre).pts - statteam(existnumrencontre).ptsencaisses > 0
+        ecart = ['+',strrep(num2str(statteam(existnumrencontre).pts - statteam(existnumrencontre).ptsencaisses),'NaN','-')];
     else
-        ecart = strrep(num2str(structurematch(nbjoueurs+1).ecart),'NaN','-');
+        ecart = strrep(num2str((statteam(existnumrencontre).pts - statteam(existnumrencontre).ptsencaisses)),'NaN','-');
     end
     
     if mod(nbjoueurs,2)
-        latextable_totline = sprintf(['\\rowcolor[HTML]{F9F9F9}','\n',' & Equipe &  &',...
+        latextable_totline = sprintf(['\\rowcolor[HTML]{F9F9F9}','\n',' Equipe &  &',...
             num2str(statteam(ligne).pts),'&',...
             num2str(statteam(ligne).tirs),'&',...
             num2str(statteam(ligne).troispts),'&',...
@@ -654,7 +745,7 @@ for ligne = 1 : length(statteam)
             strrep(num2str(statteam(ligne).ptsencaisses),'NaN','-'),'&',...
             ecart,'\n','\\\\']);
     else
-        latextable_totline = sprintf(['\\rowcolor[HTML]{EEEEEE}','\n',' & Equipe &  &',...
+        latextable_totline = sprintf(['\\rowcolor[HTML]{EEEEEE}','\n',' Equipe &  &',...
             num2str(statteam(ligne).pts),'&',...
             num2str(statteam(ligne).tirs),'&',...
             num2str(statteam(ligne).troispts),'&',...
@@ -672,15 +763,27 @@ for ligne = 1 : length(statteam)
     
     latextable_finalisation = sprintf(['\\hline','\n','\\end{tabular}}','\n','\\end{table}']);
     %Fin du tableau pour l'équipe A
-    fid = fopen('latextable.txt','A');
+    fid = fopen(nomFichierOut,'A');
     fprintf(fid,'%s\n',latextable_totline);
     fprintf(fid,'%s\n',latextable_finalisation);
     fclose(fid);
     
     %% Partie pour l'équipe B
     equipeB = nommatch(3:end);
+    equipeB = strrep(equipeB,'NOHANENT_PUY_VALEIX_1','NOHANENT_PUY_VALEIX');
+    equipeB = strrep(equipeB,'ROCHE_BASKET_AL_1','ROCHE_BASKET_AL');
+    equipeB = strrep(equipeB,'CTC_CAN_79_BASKET_1','CTC_CAN_79_BASKET');
+    equipeB = strrep(equipeB,'VILLENEUVE_BC_1','VILLENEUVE_BC');
+    equipeB = strrep(equipeB,'ABC__DOURGES_1','ABC_DOURGES_1');
+    equipeB = strrep(equipeB,'CASTELNAU__BASKET_1','CASTELNAU_BASKET_1');
+    equipeB = strrep(equipeB,'CTC_HTV___LSB___LA_LONDE','CTC_HTV_LSB_LA_LONDE');
+    equipeB = strrep(equipeB,'CTC_HTV_LSB_LA_LONDE_2','CTC_HTV_LSB_LA_LONDE');
+    equipeB = strrep(equipeB,'CTC_LYON_SO_BASKET_TERRITOIRE_2','CTC_LYON_SO_BASKET_TERRITOIRE');
+    equipeB = strrep(equipeB,'DAX_GAMARDE_GOOS_BASKET_1','DAX_GAMARDE_GOOS_BASKET');
+    equipeB = strrep(equipeB,'__','_');
     statparmatchB = stats.(comite).championnat.(chpt).(poule).(equipeB).parmatch;
     statteamB = stats.(comite).championnat.(chpt).(poule).(equipeB).equipe.matchs;
+    listejoueurB = fieldnames(stats.(comite).championnat.(chpt).(poule).(equipeB).joueurs);
     
     % on cherche la ligne qui correspond au match
     for ii = 1 : length(statteamB)
@@ -703,60 +806,103 @@ for ligne = 1 : length(statteam)
         strrep(equipeB,'_',' '),'}\n','\\normalsize','\n', '\\end{center}','\n']);
 
     %Initialisation
-    latextable_initialisation = sprintf(['\\begin{table}[h]','\n','\\centering','\n','\\resizebox{\\textwidth}{!}{%%','\n','\\begin{tabular}{|clccccccccccccccc|}','\n','\\hline','\n','\\rowcolor[HTML]{F9F9F9}','\n','\\# & nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \\%% & ftes & LF c. & + & - & +/-  \\\\ \\Xhline{3\\arrayrulewidth}','\n']);
+    latextable_initialisation = sprintf(['\\begin{table}[h]','\n','\\centering','\n','\\resizebox{\\textwidth}{!}{%%','\n','\\begin{tabular}{|lccccccccccccccc|}','\n','\\hline','\n','\\rowcolor[HTML]{F9F9F9}','\n',' nom & tdj & pts & tirs & 3 pts & 2 ext & 2 int & LF m. & LF t. & LF \\%% & ftes & LF c. & + & - & +/-  \\\\ \\Xhline{3\\arrayrulewidth}','\n']);
 
-    fid = fopen('latextable.txt','A');
+    fid = fopen(nomFichierOut,'A');
     fprintf(fid,'%s\n',latextable_nom_equipe,latextable_initialisation);
     fclose(fid);
     
-    for nbjoueurs = 1 : length(statparmatchB.(nommatchB)) - 1
-        %couleur de la liugne selon pair ou impair
-        if mod(nbjoueurs,2)
-            latextable_colorline = sprintf('\\rowcolor[HTML]{EEEEEE}');
-        else
-            latextable_colorline = sprintf('\\rowcolor[HTML]{F9F9F9}');
-        end
+    nbjoueurs = 0;
+    
+    for idxjoueur = 1 : length(listejoueurB)
         
-        %avoir le + avant l'écart
-        if structurematch(nbjoueurs).ecart > 0
-            ecart = ['+',strrep(num2str(structurematch(nbjoueurs).ecart),'NaN','-')];
-        else
-            ecart = strrep(num2str(structurematch(nbjoueurs).ecart),'NaN','-');
-        end
+        checkexist = [];
+        nomjoueur = listejoueurB{idxjoueur};
+        statsJoueur = stats.(comite).championnat.(chpt).(poule).(equipeB).joueurs.(nomjoueur).matchs;
+        l = size(statsJoueur);
+       %Check if the match is already stored in the array
+       for nbexist = 1 : l(2)
+            checkexist(nbexist) = stats.(comite).championnat.(chpt).(poule).(equipeB).joueurs.(nomjoueur).matchs(nbexist).numrencontre;
+       end
 
-        
-        if length(structurematch(nbjoueurs).nomjoueur) > 20
-            if strcmp(structurematch(nbjoueurs).nomjoueur(end),'*')
-                nomjoueur = [structurematch(nbjoueurs).nomjoueur(1:19),'*'];
+       existnumrencontre = find((checkexist == numeroRencontre),1);
+
+       if isempty(existnumrencontre) == 0 % si le joueur a joué le match
+            
+           nbjoueurs = nbjoueurs + 1;
+           
+           
+            %couleur de la liugne selon pair ou impair
+            if mod(nbjoueurs,2)
+                latextable_colorline = sprintf('\\rowcolor[HTML]{EEEEEE}');
             else
-                nomjoueur = structurematch(nbjoueurs).nomjoueur(1:19);
+                latextable_colorline = sprintf('\\rowcolor[HTML]{F9F9F9}');
             end
-        else
-            nomjoueur = structurematch(nbjoueurs).nomjoueur;
-        end
-        
-        latextable_line = sprintf([num2str(structurematch(nbjoueurs).numero),' & ',nomjoueur,'&',strrep(num2str(structurematch(nbjoueurs).tpsdejeu,'%3.1f'),'NaN','-'),'&',num2str(structurematch(nbjoueurs).pts),'&',num2str(structurematch(nbjoueurs).tirs),'&',num2str(structurematch(nbjoueurs).troispts),'&',num2str(structurematch(nbjoueurs).deuxext),'&',num2str(structurematch(nbjoueurs).deuxint),'&',num2str(structurematch(nbjoueurs).lfreussis),'&',num2str(structurematch(nbjoueurs).lftentes),'&',strrep(num2str(structurematch(nbjoueurs).lfpct,'%3.1f'),'NaN','-'),'&',num2str(structurematch(nbjoueurs).ftes),'&',num2str(structurematch(nbjoueurs).lfconc),'&',strrep(num2str(structurematch(nbjoueurs).ptsmarq),'NaN','-'),'&',strrep(num2str(structurematch(nbjoueurs).ptsenc),'NaN','-'),'&',ecart,'\n','\\\\']);
-        
-        fid = fopen('latextable.txt','A');
-        fprintf(fid,'%s\n',latextable_colorline);
-        fprintf(fid,'%s\n',latextable_line);
-        fclose(fid);
+
+            %avoir le + avant l'écart
+            if statsJoueur(existnumrencontre(1)).ecart > 0
+                ecart = ['+',strrep(num2str(statsJoueur(existnumrencontre(1)).ecart),'NaN','-')];
+            else
+                ecart = strrep(num2str(statsJoueur(existnumrencontre(1)).ecart),'NaN','-');
+            end
+
+
+            if length(structurematch(nbjoueurs).nomjoueur) > 20
+                if strcmp(structurematch(nbjoueurs).nomjoueur(end),'*')
+                    nomjoueur = [structurematch(nbjoueurs).nomjoueur(1:19),'*'];
+                else
+                    nomjoueur = structurematch(nbjoueurs).nomjoueur(1:19);
+                end
+            else
+                nomjoueur = structurematch(nbjoueurs).nomjoueur;
+            end
+
+            latextable_line = sprintf([
+                strrep(nomjoueur,'_',' '),'&',...
+                strrep(num2str(statsJoueur(existnumrencontre(1)).tpsdejeu,'%3.1f'),'NaN','-'),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).pts),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).tirs),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).troispts),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).deuxext),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).deuxint),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).lfreussis),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).lftentes),'&',...
+                strrep(num2str(statsJoueur(existnumrencontre(1)).lfpct,'%3.1f'),'NaN','-'),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).ftes),'&',...
+                num2str(statsJoueur(existnumrencontre(1)).lfconc),'&',...
+                strrep(num2str(statsJoueur(existnumrencontre(1)).ptsmarq),'NaN','-'),'&',...
+                strrep(num2str(statsJoueur(existnumrencontre(1)).ptsenc),'NaN','-'),'&',...
+                ecart,'\n','\\\\']);
+
+            fid = fopen(nomFichierOut,'A');
+            fprintf(fid,'%s\n',latextable_colorline);
+            fprintf(fid,'%s\n',latextable_line);
+            fclose(fid);
+       end
     end
     
     %ligne horizontale de 2 pixels
-    fid = fopen('latextable.txt','A');
+    fid = fopen(nomFichierOut,'A');
     fprintf(fid,'%s\n','\Xhline{2\arrayrulewidth}');
     fclose(fid);
     
+    l = size(statteamB);
+       %Check if the match is already stored in the array
+       for nbexist = 1 : l(2)
+            checkexist(nbexist) = statteamB(nbexist).numrencontre;
+       end
+
+       existnumrencontre = find((checkexist == numeroRencontre),1);
+    
     %ligne de total pour l'équipe B
-    if structurematch(nbjoueurs+1).ecart > 0
-        ecart = ['+',strrep(num2str(structurematch(nbjoueurs+1).ecart),'NaN','-')];
+    if (statteamB(existnumrencontre).pts - statteamB(existnumrencontre).ptsencaisses) > 0
+        ecart = ['+',strrep(num2str(statteamB(existnumrencontre).pts - statteamB(existnumrencontre).ptsencaisses),'NaN','-')];
     else
-        ecart = strrep(num2str(structurematch(nbjoueurs+1).ecart),'NaN','-');
+        ecart = strrep(num2str((statteamB(existnumrencontre).pts - statteamB(existnumrencontre).ptsencaisses)),'NaN','-');
     end
     
     if mod(nbjoueurs,2)
-        latextable_totline = sprintf(['\\rowcolor[HTML]{F9F9F9}','\n',' & Equipe &  &',...
+        latextable_totline = sprintf(['\\rowcolor[HTML]{F9F9F9}','\n',' Equipe &  &',...
             num2str(statteamB(ligneB).pts),'&',...
             num2str(statteamB(ligneB).tirs),'&',...
             num2str(statteamB(ligneB).troispts),'&',...
@@ -771,7 +917,7 @@ for ligne = 1 : length(statteam)
             strrep(num2str(statteamB(ligneB).ptsencaisses),'NaN','-'),'&',...
             ecart,'\n','\\\\']);
     else
-        latextable_totline = sprintf(['\\rowcolor[HTML]{EEEEEE}','\n',' & Equipe &  &',...
+        latextable_totline = sprintf(['\\rowcolor[HTML]{EEEEEE}','\n',' Equipe &  &',...
             num2str(statteamB(ligneB).pts),'&',...
             num2str(statteamB(ligneB).tirs),'&',...
             num2str(statteamB(ligneB).troispts),'&',...
@@ -789,7 +935,7 @@ for ligne = 1 : length(statteam)
     
     latextable_finalisation = sprintf(['\\hline','\n','\\end{tabular}}','\n','\\end{table}','\n','\\newpage']);
     %Fin du tableau pour l'équipe B
-    fid = fopen('latextable.txt','A');
+    fid = fopen(nomFichierOut,'A');
     fprintf(fid,'%s\n',latextable_totline);
     fprintf(fid,'%s\n',latextable_finalisation);
     fclose(fid);
@@ -799,8 +945,8 @@ end
 
 %% Fin du document
 latex_end_document = sprintf(['\n','\\end{document}','\n']);
-fid = fopen('latextable.txt','A');
+fid = fopen(nomFichierOut,'A');
 fprintf(fid,'%s\n',latex_end_document);
 fclose(fid);
 
-
+% end

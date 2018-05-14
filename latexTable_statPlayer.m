@@ -19,6 +19,8 @@ nbMatchs = length(statPlayer);
     tot.tech = 0;
     tot.disqua = 0;
     nbMatchsNonJoues = 0;
+    nbMatchsTdjNan = 0;
+    nbMatchsEcartNan = 0;
     
     for i = 1 : nbMatchs  
         if (statPlayer(i).tpsdejeu == 0 || isnan(statPlayer(i).tpsdejeu)) && statPlayer(i).pts == 0 && statPlayer(i).lftentes == 0 && statPlayer(i).ftes == 0 && isnan(statPlayer(i).ptsmarq)
@@ -26,8 +28,19 @@ nbMatchs = length(statPlayer);
            statPlayer(i).ptsmarq = 0;
            statPlayer(i).ptsenc = 0;
            statPlayer(i).ecart = 0;
+           
         end 
-            
+        
+        if ( isnan(statPlayer(i).tpsdejeu))
+            statPlayer(i).tpsdejeu = 0;
+            nbMatchsTdjNan = nbMatchsTdjNan + 1;
+        end
+        
+        if ( isnan(statPlayer(i).ptsmarq))
+            statPlayer(i).ptsmarq = 0;
+            statPlayer(i).ptsenc = 0;
+            nbMatchsEcartNan = nbMatchsEcartNan + 1;
+        end
         
         tot.tpsdejeu = tot.tpsdejeu + statPlayer(i).tpsdejeu;
         tot.pts = tot.pts + statPlayer(i).pts;
@@ -53,7 +66,7 @@ nbMatchs = length(statPlayer);
     
     nbMj = (nbMatchs - nbMatchsNonJoues);
     
-    mean.tpsdejeu = tot.tpsdejeu / nbMj;
+    mean.tpsdejeu = tot.tpsdejeu / (nbMj-nbMatchsTdjNan);
     mean.pts = tot.pts / nbMj;
     mean.tirs = tot.tirs / nbMj;
     mean.troispts = tot.troispts / nbMj;
